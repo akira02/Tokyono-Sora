@@ -4,7 +4,7 @@ A Plurk custom CSS theme </br>
 </br>
 ![image](https://user-images.githubusercontent.com/4176802/97410809-7d8b2280-193a-11eb-8233-296b0976b52a.png)
 </br>
-### [透過噗浪安裝](https://www.plurk.com/installDesign/7550387-3e3787e805)</br>
+### [透過噗浪安裝](https://www.plurk.com/installDesign/7550387-aeca932534)</br>
 [自行複製本體CSS](https://github.com/akira02/Tokyono-Sora/blob/main/TokynoSora.css)</br>
 [附加自訂CSS](https://github.com/akira02/Tokyono-Sora/blob/main/custom.css)</br>
 </br>
@@ -40,9 +40,13 @@ Chrome：
 
 
 ## 使用展示
-
+一般卡馬值</br>
+<img width="190" alt="截圖 2020-10-28 下午5 52 00" src="https://user-images.githubusercontent.com/4176802/97420452-4cb0ea80-1946-11eb-980a-80010958561a.png"></br>
+</br>世界線變動率風格卡馬值</br>
 <img width="401" alt="截圖 2020-10-28 下午1 37 14" src="https://user-images.githubusercontent.com/4176802/97410919-9c89b480-193a-11eb-9338-97c72bf28b1b.png">
 <img width="737" alt="截圖 2020-10-28 下午1 37 25" src="https://user-images.githubusercontent.com/4176802/97410939-a1e6ff00-193a-11eb-9ced-935328081383.png">
+</br>
+</br>噗文</br>
 <img width="497" alt="截圖 2020-10-28 下午1 37 35" src="https://user-images.githubusercontent.com/4176802/97410950-a3182c00-193a-11eb-8d85-cc74ef4261d0.png">
 <img width="1546" alt="截圖 2020-10-28 下午1 37 50" src="https://user-images.githubusercontent.com/4176802/97410959-a3b0c280-193a-11eb-8dee-35d9e7b88af0.png">
 
