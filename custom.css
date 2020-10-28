@@ -1,5 +1,12 @@
+/* 自用額外設定 */
+
+/* 換滑鼠游標 */
+body {
+  cursor: url("https://chiaki.uk/Zero-Memo/img/arrow.gif"), move;
+}
 
 /* 換噗浪獸 */
+
 #dynamic_logo img {
   display: none;
 }
@@ -28,7 +35,7 @@
   right: 30px;
 }
 
-/* 改成世界線風格卡馬值 */
+/* 改成世界線變動率風格卡馬值 */
 #karma::before{
   content: '1·0';
 }
@@ -47,3 +54,11 @@
 .dash-group-left:hover + .dash-group-right {
   transform: translate(500px ,-50px);
 }
+
+/* 自定性別文字 */
+#m_or_f {
+  display: none;
+}
+#span_years:after {
+  content: '大小姐♂';
+} 

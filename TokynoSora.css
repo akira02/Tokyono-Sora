@@ -9,7 +9,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -moz-font-feature-settings: "liga" on;
-  cursor: url("https://chiaki.uk/Zero-Memo/img/arrow.gif"), move;
 }
 .text_holder {
   line-height: 1.5em;
@@ -286,6 +285,11 @@ body {
   top: -10px;
   left: -20px;
   box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+/*獲贈噗幣*/
+.plurk_icon.coin {
+  margin-top: 2px;
+  margin-left: 50px;
 }
 /*面板*/
 .dash-segment .segment-content {
