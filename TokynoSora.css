@@ -14,8 +14,7 @@ body {
 .text_holder {
   line-height: 1.5em;
 }
-' {}
-:not(*) /* { */, /*
+' {}:not(*) /* { */, /*
 }*/
 body {
   overflow-y: auto;
@@ -62,8 +61,7 @@ body {
 }
 
 /*頂端功能列模糊*/
-' {}
-:not(*) /* { */, /*
+' {}:not(*) /* { */, /*
 }*/
 #top_bar {
     backdrop-filter: saturate(180%) blur(20px);
@@ -71,41 +69,36 @@ body {
 ' {}
 
 /*彈出視窗模糊*/
-' {}
-:not(*) /* { */, /*
+' {}:not(*) /* { */, /*
 }*/
 .divplurk {
     background: none !important;
 }
 ' {}
-' {}
-:not(*) /* { */, /*
+' {}:not(*) /* { */, /*
 }*/
 .pop-window-view {
     background: none !important;
 }
 ' {}
-' {}
-:not(*) /* { */, /*
+' {}:not(*) /* { */, /*
 }*/
 .response_box {
     background: none !important;
 }
 ' {}
-' {}
-:not(*) /* { */, /*
+' {}:not(*) /* { */, /*
 }*/
 .mini_form {
    background: none !important;
 }
 ' {}
-' {}
-:not(*) /* { */, /*
+' {}:not(*) /* { */, /*
 }*/
 .img-holder {
    background: none !important;
-}' {}
-
+}
+' {}
 ' {}:not(*) /* { */, /*
 }*/
 .cbox_left {
@@ -329,8 +322,7 @@ body {
   background: none;
   border-radius: 150px;
   max-height: 115px;
-  transition: max-height 1s, transform 1s, background 0.5s,
-    border-radius 0.3s 1s;
+  transition: max-height 1s, transform 1s, background 0.5s, border-radius 0.3s 1s;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: saturate(180%) blur(20px);
@@ -477,8 +469,7 @@ body {
   font-size: 50px;
 }
 /*隱藏卡馬圖表*/
-' {}
-:not(*) /* { */, /*
+' {}:not(*) /* { */, /*
 }*/
 .karma_tooltip {
   height: 0;
