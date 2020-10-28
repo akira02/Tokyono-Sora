@@ -15,6 +15,9 @@ A Plurk custom CSS theme </br>
 
 
 ## 特色
+### 可愛的載入動畫
+旋轉狐狸
+![Oct-28-2020 16-13-49](https://user-images.githubusercontent.com/4176802/97418922-62bdab80-1944-11eb-8a07-475ed7cfe95a.gif)
 ### 個人簡介顯示動畫
 ![Oct-28-2020 17-19-53](https://user-images.githubusercontent.com/4176802/97416800-e033ec80-1941-11eb-8fe4-4de3d1f7d073.gif)
 ### 支援瀏覽器縮放
@@ -31,6 +34,7 @@ Chrome：
 ### 精心設計的排版
 調整了行距、暱稱與大頭貼位置、配色、背景與字體、噗浪的寬度，讓噗浪使用起來更簡潔舒適
 <img width="497" alt="截圖 2020-10-28 下午1 37 35" src="https://user-images.githubusercontent.com/4176802/97410950-a3182c00-193a-11eb-8d85-cc74ef4261d0.png">
+
 
 ## 使用展示
 
