@@ -194,9 +194,9 @@ body {
 }
 /*噗文大頭貼*/
 .td_img {
-  position: relative;
+  position: absolute;
   top: 10px;
-  right: -33px;
+  left: 13px;
   z-index: 100;
 }
 .p_img img {
@@ -288,8 +288,16 @@ body {
 }
 /*獲贈噗幣*/
 .plurk_icon.coin {
-  margin-top: 2px;
-  margin-left: 50px;
+  margin-top: 3px;
+  margin-left: 30px;
+}
+/*釘選icon*/
+.pinned_plurk_icon {
+  left: -10px;
+}
+/*私噗icon*/
+.plurk_icon.private {
+  margin: -10px
 }
 /*面板*/
 .dash-segment .segment-content {
