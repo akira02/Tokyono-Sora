@@ -1,0 +1,49 @@
+
+/* 換噗浪獸 */
+#dynamic_logo img {
+  display: none;
+}
+/*圖片*/
+#dynamic_logo:before {
+  content: '　' ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 300px;
+  width: 300px;
+  background-image: url('https://images.plurk.com/7ojjprVw544b3sfxIjFU5h.png ');
+  bottom: 110px;
+  right: 30px;
+  position: fixed;
+}
+/*簽名*/
+#dynamic_logo:after {
+  content: '　';
+  position: fixed;
+  background-image: url('https://akira.eu.org/img/sign_animated.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 400px;
+  bottom: 130px;
+  right: 30px;
+}
+
+/* 改成世界線風格卡馬值 */
+#karma::before{
+  content: '1·0';
+}
+#karma::after {
+  content: '$$$$$$$$';
+}
+#karma {
+  font-family: nixie2;
+}
+.dash-group-right {
+  transform: translate(500px ,0);
+}
+.dash-group-right:hover #karma {
+  transform: translate(5px, 20px);
+}
+.dash-group-left:hover + .dash-group-right {
+  transform: translate(500px ,-50px);
+}
