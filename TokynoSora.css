@@ -112,6 +112,14 @@ body {
     backdrop-filter: saturate(180%) blur(20px);
 }
 ' {}
+' {}:not(*) /* { */, /*
+}*/
+.pop-window-view iframe {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: saturate(180%) blur(20px);
+}
+' {}
+
 
 /*   河道調整   */
 
@@ -429,6 +437,7 @@ body {
   margin: 0;
   left: 7px;
   text-indent: -300px;
+  pointer-events: none;
 }
 #karma_holder {
   display: inline-block;
@@ -468,16 +477,7 @@ body {
   transform: translate(20px, 20px);
   font-size: 50px;
 }
-/*隱藏卡馬圖表*/
-' {}:not(*) /* { */, /*
-}*/
-.karma_tooltip {
-  height: 0;
-  width: 0;
-  overflow: hidden;
-  border: none;
-}
-' {}
+
 
 /*   底部設定   */
 
