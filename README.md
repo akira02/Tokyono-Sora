@@ -1,5 +1,5 @@
-# Tokyono Sora 東京乃空
-A Plurk custom CSS theme </br>
+# Tokyono Sora 東京乃空 - Plurk UI
+Redesigned Plurk UI </br>
 由[千秋](https://plurk.com/akira02)精心製作，重新設計的噗浪UI，免費且自由使用的噗浪CSS佈景！</br>
 </br>
 ![image](https://user-images.githubusercontent.com/4176802/97410809-7d8b2280-193a-11eb-8233-296b0976b52a.png)
