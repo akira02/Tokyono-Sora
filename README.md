@@ -4,7 +4,7 @@ Redesigned Plurk UI </br>
 </br>
 ![image](https://user-images.githubusercontent.com/4176802/97410809-7d8b2280-193a-11eb-8233-296b0976b52a.png)
 </br>
-### [透過噗浪安裝](https://www.plurk.com/installDesign/7550387-aeca932534)</br>
+### [透過噗浪安裝](https://www.plurk.com/installDesign/7550387-911accf405)</br>
 [自行複製本體CSS](https://github.com/akira02/Tokyono-Sora/blob/main/TokynoSora.css)</br>
 [附加自訂CSS](https://github.com/akira02/Tokyono-Sora/blob/main/custom.css)</br>
 </br>
