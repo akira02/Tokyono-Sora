@@ -16,8 +16,11 @@ A Plurk custom CSS theme </br>
 
 ## 特色
 ### 可愛的載入動畫
-旋轉狐狸
+自家製可愛旋轉狐狸</br>
 ![Oct-28-2020 16-13-49](https://user-images.githubusercontent.com/4176802/97418922-62bdab80-1944-11eb-8a07-475ed7cfe95a.gif)
+### 數字管風格卡馬字體
+自家製數字管字體</br>
+<img width="236" alt="截圖 2020-10-28 下午5 43 27" src="https://user-images.githubusercontent.com/4176802/97419516-1de64480-1945-11eb-9e31-afb2dba262cf.png">
 ### 個人簡介顯示動畫
 ![Oct-28-2020 17-19-53](https://user-images.githubusercontent.com/4176802/97416800-e033ec80-1941-11eb-8fe4-4de3d1f7d073.gif)
 ### 支援瀏覽器縮放
