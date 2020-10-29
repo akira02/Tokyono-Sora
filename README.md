@@ -5,15 +5,15 @@ Redesigned Plurk UI </br>
 </br></br>
 
 
+### [透過噗浪安裝](https://www.plurk.com/installDesign/7550387-3ef03175a0) </br>
+[本體CSS](https://github.com/akira02/Tokyono-Sora/blob/main/TokynoSora.css) </br>
+[附加自訂CSS](https://github.com/akira02/Tokyono-Sora/blob/main/custom.css) </br>
 </br>
-### [透過噗浪安裝](https://www.plurk.com/installDesign/7550387-3ef03175a0)</br>
-[本體CSS](https://github.com/akira02/Tokyono-Sora/blob/main/TokynoSora.css)</br>
-[附加自訂CSS](https://github.com/akira02/Tokyono-Sora/blob/main/custom.css)</br>
-</br>
+
 備註：Firefox 70以上也支援背景模糊功能，但需要額外自行啟用：
 * 在網址列輸入 ```about:config``` </br>
 * ```layout.css.backdrop-filter.enabled``` 設定為```true``` </br>
-* ```gfx.webrender.all``` 設定為 ```true```</br>
+* ```gfx.webrender.all``` 設定為 ```true``` </br>
 
 
 ## 特色
@@ -42,13 +42,12 @@ Chrome：
 
 
 ## 使用展示
-一般卡馬值</br>
+### 一般卡馬值</br>
 <img width="190" alt="截圖 2020-10-28 下午5 52 00" src="https://user-images.githubusercontent.com/4176802/97420452-4cb0ea80-1946-11eb-980a-80010958561a.png"></br>
-</br>世界線變動率風格卡馬值</br>
+### 世界線變動率風格卡馬值</br>
 <img width="401" alt="截圖 2020-10-28 下午1 37 14" src="https://user-images.githubusercontent.com/4176802/97410919-9c89b480-193a-11eb-9338-97c72bf28b1b.png">
-<img width="737" alt="截圖 2020-10-28 下午1 37 25" src="https://user-images.githubusercontent.com/4176802/97410939-a1e6ff00-193a-11eb-9ced-935328081383.png">
-</br>
-</br>噗文</br>
+<img width="737" alt="截圖 2020-10-28 下午1 37 25" src="https://user-images.githubusercontent.com/4176802/97410939-a1e6ff00-193a-11eb-9ced-935328081383.png"></br>
+### 噗文
 <img width="497" alt="截圖 2020-10-28 下午1 37 35" src="https://images.plurk.com/4PBA3UHxWIMZ4z46kWHGLM.png">
 <img width="1546" alt="截圖 2020-10-28 下午1 37 50" src="https://user-images.githubusercontent.com/4176802/97410959-a3b0c280-193a-11eb-8dee-35d9e7b88af0.png">
 
