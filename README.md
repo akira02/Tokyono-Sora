@@ -1,11 +1,13 @@
 # Tokyono Sora 東京乃空 - Plurk UI
 Redesigned Plurk UI </br>
-由[千秋](https://plurk.com/akira02)精心製作，重新設計的噗浪UI，免費且自由使用的噗浪CSS佈景！</br>
+由[千秋設計所](https://plurk.com/akira02)重新設計的噗浪UI，免費且自由使用的噗浪CSS佈景！</br>
+![image](https://images.plurk.com/3JD6vO5tC3YkhNwANnJStQ.png)
+</br></br>
+
+
 </br>
-![image](https://user-images.githubusercontent.com/4176802/97410809-7d8b2280-193a-11eb-8233-296b0976b52a.png)
-</br>
-### [透過噗浪安裝](https://www.plurk.com/installDesign/7550387-911accf405)</br>
-[自行複製本體CSS](https://github.com/akira02/Tokyono-Sora/blob/main/TokynoSora.css)</br>
+### [透過噗浪安裝](https://www.plurk.com/installDesign/7550387-3ef03175a0)</br>
+[本體CSS](https://github.com/akira02/Tokyono-Sora/blob/main/TokynoSora.css)</br>
 [附加自訂CSS](https://github.com/akira02/Tokyono-Sora/blob/main/custom.css)</br>
 </br>
 備註：Firefox 70以上也支援背景模糊功能，但需要額外自行啟用：
@@ -34,9 +36,9 @@ Chrome：
 ### 背景圖上傳
 可以直接使用噗浪的背景圖上傳功能跟佈景配色
 <img width="698" alt="截圖 2020-10-28 下午4 36 28" src="https://user-images.githubusercontent.com/4176802/97411840-c1caf280-193b-11eb-91c9-251ca534cac6.png">
-### 精心設計的排版
+### 調整過的排版
 調整了行距、暱稱與大頭貼位置、配色、背景與字體、噗浪的寬度，讓噗浪使用起來更簡潔舒適
-<img width="497" alt="截圖 2020-10-28 下午1 37 35" src="https://user-images.githubusercontent.com/4176802/97410950-a3182c00-193a-11eb-8d85-cc74ef4261d0.png">
+<img width="497" alt="截圖 2020-10-28 下午1 37 35" src="https://images.plurk.com/4PBA3UHxWIMZ4z46kWHGLM.png">
 
 
 ## 使用展示
@@ -47,7 +49,7 @@ Chrome：
 <img width="737" alt="截圖 2020-10-28 下午1 37 25" src="https://user-images.githubusercontent.com/4176802/97410939-a1e6ff00-193a-11eb-9ced-935328081383.png">
 </br>
 </br>噗文</br>
-<img width="497" alt="截圖 2020-10-28 下午1 37 35" src="https://user-images.githubusercontent.com/4176802/97410950-a3182c00-193a-11eb-8d85-cc74ef4261d0.png">
+<img width="497" alt="截圖 2020-10-28 下午1 37 35" src="https://images.plurk.com/4PBA3UHxWIMZ4z46kWHGLM.png">
 <img width="1546" alt="截圖 2020-10-28 下午1 37 50" src="https://user-images.githubusercontent.com/4176802/97410959-a3b0c280-193a-11eb-8dee-35d9e7b88af0.png">
 
 ## FAQ
