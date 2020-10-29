@@ -1,8 +1,8 @@
 /* 自用額外設定 */
 
 /* 換滑鼠游標 */
-body {
-  cursor: url("https://chiaki.uk/Zero-Memo/img/arrow.gif"), move;
+* {
+  cursor: url("https://chiaki.uk/Zero-Memo/img/arrow.gif"), auto;
 }
 
 /* 換噗浪獸 */

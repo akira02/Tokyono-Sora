@@ -123,7 +123,7 @@ body {
 /*   河道調整   */
 
 #timeline_holder {
-  height: calc(100vh - 200px) !important;
+  height: calc(100vh - 160px) !important;
 }
 /* 時間標籤置頂 */
 .bottom_start {
@@ -166,7 +166,7 @@ body {
 
 /*噗本體*/
 .cboxAnchor:not(.response) .plurk_cnt {
-  border-radius: 7px;
+  border-radius: 8px;
   background: rgba(255, 255, 255, 0.8) !important;
   backdrop-filter: saturate(180%) blur(20px);
 }
@@ -286,6 +286,10 @@ body {
   left: -20px;
   box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
+/*回覆框*/
+.plurkForm.mini-mode .input_holder, .mini_form .input_holder {
+  border-radius: 10px;
+}
 /*獲贈噗幣*/
 .plurk_icon.coin {
   margin-top: 3px;
@@ -299,15 +303,20 @@ body {
 .plurk_icon.private {
   margin: -10px
 }
-/*面板*/
-.dash-segment .segment-content {
-  background: none;
-  margin: 0;
+.char_updater {
+  display: none;
+}
+.timeline-cnt .plurk .time {
+  display: none;
 }
 
 /*   面板設定   */
 
 /*重置背景*/
+.dash-segment .segment-content {
+  background: none;
+  margin: 0;
+}
 #plurk-dashboard {
   background: none;
   border: none;
@@ -320,15 +329,45 @@ body {
   left: 50%;
   transform: translate(-50%, 0);
   width: calc(100vw - 200px) !important;
-  max-width: 800px !important;
-  border-radius: 5px;
+  max-width: 950px !important;
+  border-radius: 30px;
   box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.8);
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: saturate(180%) blur(20px);
   z-index: 500;
 }
+#plurk-dashboard .dash-group-form .segment-content {
+  min-height: 62px;
+}
 .dash-group-form:hover {
-  z-index: 700;
+  z-index: 1100;
+}
+.plurkForm {
+  display: flex;
+  align-items: center;
+  margin: 0 0 5px 3px;
+}
+.submit_img {
+  order: 3;
+  width: auto;
+  border-radius: 20px;
+  padding: 0 15px 0 15px;
+  line-height: 35px;
+  margin-right: 5px;
+}
+.input_holder {
+  order: 1;
+  flex-grow: 1;
+  border-radius: 20px;
+  padding-right: 10px;
+}
+.icons_holder {
+  order: 2;
+  margin-left: 10px;
+}
+.m_qualifier {
+  border-radius: 15px;
+  padding: 3px 11px 4px 10px;
 }
 
 /*自介面板*/
