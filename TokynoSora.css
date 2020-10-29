@@ -264,9 +264,9 @@ body {
 }
 /* 回應計數 */
 .td_response_count {
-  display: block;
-  width: 25px !important;
-  height: 25px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   line-height: 25px;
   font-weight: 100;
@@ -282,9 +282,11 @@ body {
 .new .response_count {
   position: relative !important;
   background-color: #ff574d;
-  top: -10px;
-  left: -20px;
+  top: -13px;
+  left: -15px;
   box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+  width: 25px;
+  height: 25px;
 }
 /*回覆框*/
 .plurkForm.mini-mode .input_holder, .mini_form .input_holder {
