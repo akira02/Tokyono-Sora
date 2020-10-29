@@ -331,8 +331,8 @@ body {
   width: calc(100vw - 200px) !important;
   max-width: 950px !important;
   border-radius: 30px;
-  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.8);
-  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: saturate(180%) blur(20px);
   z-index: 500;
 }
