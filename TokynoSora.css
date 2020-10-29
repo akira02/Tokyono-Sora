@@ -1,38 +1,42 @@
 /*   整體控制   */
 
-body {
-  font-family: "M 翔鶴黑體 TC", "PingFang TC", "LiHei Pro", "Heiti TC",
-    "Source Han Sans TC", "Hiragino Sans", "Meiryo", "Century Gothic",
-    "Microsoft Jhenghei", "微軟正黑體", sans-serif !important;
-  text-rendering: optimizeLegibility;
-  height: 100vh;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -moz-font-feature-settings: "liga" on;
-}
-.text_holder {
-  line-height: 1.5em;
-}
 ' {}:not(*) /* { */, /*
 }*/
 body {
   overflow-y: auto;
+  font-family: "M 翔鶴黑體 TC", "PingFang TC", "LiHei Pro", "Heiti TC",
+    "Source Han Sans TC", "Hiragino Sans", "Meiryo", "Century Gothic",
+    "Microsoft Jhenghei", "微軟正黑體", sans-serif !important;
 }
 ' {}
-
+._lc_ {
+  height: 100vh;
+}
+.text_holder {
+  line-height: 1.5em;
+}
 /*捲軸調整*/
+' {}:not(*) /* { */, /*
+}*/
 ::-webkit-scrollbar {
   width: 5px;
 }
+' {}
+' {}:not(*) /* { */, /*
+}*/
 ::-webkit-scrollbar-track {
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
+' {}
+' {}:not(*) /* { */, /*
+}*/
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 4px;
   border-radius: 4px;
   background: #ccc;
 }
+' {}
 
 /*載入動畫*/
 .loading > img {
@@ -77,7 +81,8 @@ body {
 ' {}:not(*) /* { */, /*
 }*/
 .pop-window-view {
-    background: none !important;
+  background: none !important;
+  border-radius: 7px !important;
 }
 ' {}
 ' {}:not(*) /* { */, /*
