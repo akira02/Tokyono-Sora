@@ -18,8 +18,8 @@
   height: 300px;
   width: 300px;
   background-image: url('https://images.plurk.com/7ojjprVw544b3sfxIjFU5h.png ');
-  bottom: 110px;
-  right: 30px;
+  bottom: 80px;
+  right: 40px;
   position: fixed;
 }
 /*簽名*/
@@ -31,8 +31,8 @@
   background-size: cover;
   height: 300px;
   width: 400px;
-  bottom: 130px;
-  right: 30px;
+  bottom: 90px;
+  right: 20px;
 }
 
 /* 改成世界線變動率風格卡馬值 */
