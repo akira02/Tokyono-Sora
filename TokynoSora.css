@@ -350,6 +350,8 @@ body {
   display: flex;
   align-items: center;
   margin: 0 0 5px 3px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 .submit_img {
   order: 3;
@@ -364,10 +366,14 @@ body {
   flex-grow: 1;
   border-radius: 20px;
   padding-right: 10px;
+  min-width: 200px;
 }
 .icons_holder {
   order: 2;
   margin-left: 10px;
+}
+#main_poster .icons_holder {
+   min-width: 190px;
 }
 .m_qualifier {
   border-radius: 15px;
