@@ -1,6 +1,6 @@
 # Tokyono Sora 東京乃空 - Plurk UI
 Redesigned Plurk UI </br>
-由[千秋設計所](https://plurk.com/akira02)重新設計的噗浪UI，免費且自由使用的噗浪CSS佈景！</br>
+由[千秋稻荷社](https://plurk.com/akira02)重新設計的噗浪UI，免費且自由使用的噗浪CSS佈景！</br>
 ![image](https://images.plurk.com/3JD6vO5tC3YkhNwANnJStQ.png)
 </br></br>
 
@@ -45,9 +45,10 @@ Chrome：
 ### 一般卡馬值</br>
 <img width="190" alt="截圖 2020-10-28 下午5 52 00" src="https://user-images.githubusercontent.com/4176802/97420452-4cb0ea80-1946-11eb-980a-80010958561a.png"></br>
 ### 世界線變動率風格卡馬值</br>
-<img width="401" alt="截圖 2020-10-28 下午1 37 14" src="https://user-images.githubusercontent.com/4176802/97410919-9c89b480-193a-11eb-9338-97c72bf28b1b.png">
-<img width="737" alt="截圖 2020-10-28 下午1 37 25" src="https://user-images.githubusercontent.com/4176802/97410939-a1e6ff00-193a-11eb-9ced-935328081383.png"></br>
+![](https://user-images.githubusercontent.com/4176802/97410919-9c89b480-193a-11eb-9338-97c72bf28b1b.png)
+![](https://user-images.githubusercontent.com/4176802/97410939-a1e6ff00-193a-11eb-9ced-935328081383.png)
 ### 噗文
+<img width="497" alt="截圖 2020-10-28 下午1 37 35" src="https://images.plurk.com/4PBA3UHxWIMZ4z46kWHGLM.png">
 <img width="497" alt="截圖 2020-10-28 下午1 37 35" src="https://images.plurk.com/4PBA3UHxWIMZ4z46kWHGLM.png">
 <img width="1546" alt="截圖 2020-10-28 下午1 37 50" src="https://user-images.githubusercontent.com/4176802/97410959-a3b0c280-193a-11eb-8dee-35d9e7b88af0.png">
 
