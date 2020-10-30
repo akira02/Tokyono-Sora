@@ -2,7 +2,7 @@
 ### Redesigned Plurk UI </br>
 ![image](https://images.plurk.com/3Lhkj9gwd4SEWocsJgFaVm.png)
  </br> </br>
-由[千秋稻荷社](https://plurk.com/akira02)重新設計的噗浪UI，免費且自由使用的噗浪CSS佈景！</br>
+[千秋稻荷社](https://plurk.com/akira02) 重新設計的噗浪UI，免費且自由使用的噗浪CSS佈景！</br>
 ![image](https://images.plurk.com/51F0ghyRPLXSwrIkM81MBB.jpg)
 ![image](https://images.plurk.com/3JD6vO5tC3YkhNwANnJStQ.png)
 </br></br>
@@ -20,6 +20,9 @@
 
 
 ## 特色
+### RWD設計
+適用各種不同的螢幕寬高，也適用直向螢幕！</br>
+<img width="300" alt="截圖" src="https://images.plurk.com/2FR7rxa4EV0KPPQqzHllor.png">
 ### 可愛的載入動畫
 自家製可愛旋轉狐狸</br>
 ![Oct-28-2020 16-13-49](https://user-images.githubusercontent.com/4176802/97418922-62bdab80-1944-11eb-8a07-475ed7cfe95a.gif)
