@@ -229,6 +229,9 @@ body {
 .cboxAnchor:not(.response).plurk_box .plurk_cnt {
   border-radius: 7px 7px 0 0;
 }
+.plurk_editor_form {
+  order: 4;
+}
 /*重設回應欄位背景*/
 .response_box {
   background: none !important;
