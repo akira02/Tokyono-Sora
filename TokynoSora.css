@@ -184,6 +184,7 @@ body {
 .cboxAnchor:not(.response) .tr_cnt {
   display: block;
   margin: 7px;
+  max-width: 430px;
 }
 /*噗文暱稱*/
 .cboxAnchor:not(.response) .td_qual {
