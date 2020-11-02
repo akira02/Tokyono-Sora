@@ -355,7 +355,7 @@ body {
 }
 .plurkForm {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   margin: 0 0 5px 3px;
   flex-wrap: wrap;
   justify-content: flex-end;
