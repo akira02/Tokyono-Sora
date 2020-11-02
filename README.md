@@ -9,7 +9,9 @@
 ![image](https://images.plurk.com/3JD6vO5tC3YkhNwANnJStQ.png)
 </br></br>
 
-### [透過噗浪安裝](https://www.plurk.com/installDesign/7550387-3ef03175a0) </br>
+### 安裝
+
+複製本體 CSS，貼到 `自訂佈景` -> `自訂佈景風格` 欄位
 
 [本體 CSS](https://github.com/akira02/Tokyono-Sora/blob/main/TokynoSora.css) </br>
 [附加自訂 CSS](https://github.com/akira02/Tokyono-Sora/blob/main/custom.css) </br>
