@@ -1,5 +1,9 @@
 /*   整體控制   */
 
+.block_cnt {
+  transition: 0s;
+}
+
 ' {}:not(*) /* { */, /*
 }*/
 body {
@@ -220,10 +224,10 @@ body {
 }
 /*選中的噗文*/
 .cboxAnchor:not(.response).display .plurk_cnt {
-  min-width: 400px;
+  min-width: 420px;
 }
 .cboxAnchor:not(.response).display .tr_cnt {
-  min-width: 400px;
+  min-width: 420px;
 }
 /*展開噗文*/
 .cboxAnchor:not(.response).plurk_box .plurk_cnt {
