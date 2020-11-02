@@ -178,7 +178,7 @@ body {
 }
 /*噗文寬度*/
 .plurk.cboxAnchor:not(.response) {
-  max-width: 420px;
+  max-width: 430px;
 }
 /*噗文邊界*/
 .cboxAnchor:not(.response) .tr_cnt {
@@ -224,10 +224,10 @@ body {
 }
 /*選中的噗文*/
 .cboxAnchor:not(.response).display .plurk_cnt {
-  min-width: 420px;
+  min-width: 430px;
 }
 .cboxAnchor:not(.response).display .tr_cnt {
-  min-width: 420px;
+  min-width: 430px;
 }
 /*展開噗文*/
 .cboxAnchor:not(.response).plurk_box .plurk_cnt {
