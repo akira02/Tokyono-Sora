@@ -134,9 +134,7 @@ body {
 /* 時間標籤 */
 .bottom_start {
   position: absolute;
-  color: #fff !important;
   height: 18px;
-  background: #000 !important;
 }
 #bottom_line {
   display: none !important;
@@ -148,7 +146,8 @@ body {
   bottom: 5%;
   left: auto !important;
   padding: 10px !important;
-  background: #000 !important;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: saturate(180%) blur(20px);
 }
 #time_show span {
   color: #fff !important;
