@@ -62,3 +62,9 @@
 #span_years:after {
   content: '大小姐♂';
 } 
+
+/* 下方時間列顏色*/
+.bottom_start {
+  background: black !important;
+  color: white !important;
+}
