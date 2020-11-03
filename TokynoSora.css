@@ -131,13 +131,12 @@ body {
 #timeline_holder {
   height: calc(100vh - 160px) !important;
 }
-/* 時間標籤置頂 */
+/* 時間標籤 */
 .bottom_start {
   position: absolute;
   color: #fff !important;
   height: 18px;
-  background: rgba(0, 0, 0, 0.8) !important;
-  backdrop-filter: saturate(180%) blur(20px);
+  background: #000 !important;
 }
 #bottom_line {
   display: none !important;
@@ -149,8 +148,7 @@ body {
   bottom: 5%;
   left: auto !important;
   padding: 10px !important;
-  background: rgba(0, 0, 0, 0.8) !important;
-  backdrop-filter: saturate(180%) blur(20px);
+  background: #000 !important;
 }
 #time_show span {
   color: #fff !important;
