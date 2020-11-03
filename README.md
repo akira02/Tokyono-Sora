@@ -33,7 +33,7 @@
 ### RWD 設計
 
 適用各種不同的螢幕寬高，也適用直向螢幕！</br>
-<img width="300" alt="截圖" src="https://images.plurk.com/2FR7rxa4EV0KPPQqzHllor.png">
+<img width="300" alt="截圖" src="https://images.plurk.com/3gBzHOaar2BuhF7JX8OhCa.png">
 
 ### 可愛的載入動畫
 
