@@ -1,3 +1,10 @@
+/* 
+   Tokyono-Sora 
+   Design by Chiaki.C https://plurk.com/akira02
+   https://github.com/akira02/Tokyono-Sora/
+*/
+
+
 /*   整體控制   */
 
 .block_cnt {
@@ -529,6 +536,9 @@ body {
   text-shadow: 0px 0px 6px rgba(255, 65, 0, 0.7), 0px 0px 20px #ff8000,
     0px 0px 10px rgb(118, 18, 3) !important;
   transition: transform 1s, font-size 1s;
+}
+.dash-stats-karma .help{
+  display: none;
 }
 /*背景燈絲*/
 #karma::after {
