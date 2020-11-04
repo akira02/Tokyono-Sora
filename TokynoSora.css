@@ -146,7 +146,7 @@ body {
   bottom: 5%;
   left: auto !important;
   padding: 10px !important;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6) !important;
   backdrop-filter: saturate(180%) blur(20px);
 }
 #time_show span {
@@ -226,6 +226,12 @@ body {
 }
 .cboxAnchor:not(.response).display .tr_cnt {
   min-width: 430px;
+}
+.cboxAnchor:not(.response).display .text_holder {
+  margin-bottom: 15px;
+}
+.cboxAnchor:not(.response).display .manager {
+  margin-top: -15px;
 }
 /*展開噗文*/
 .cboxAnchor:not(.response).plurk_box .plurk_cnt {
@@ -313,9 +319,6 @@ body {
   margin: -10px
 }
 .char_updater {
-  display: none;
-}
-.timeline-cnt .plurk .time {
   display: none;
 }
 
