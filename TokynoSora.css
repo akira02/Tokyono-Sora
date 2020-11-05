@@ -312,21 +312,18 @@ body {
 .plurkForm.mini-mode .input_holder, .mini_form .input_holder {
   border-radius: 10px;
 }
-/*獲贈噗幣*/
-.plurk_icon.coin {
-  margin-top: 3px;
-  margin-left: 30px;
+.char_updater {
+  display: none;
 }
-/*釘選icon*/
+/*icon*/
+.plurk_icon {
+  margin: -25px 0 0 18px;
+}
 .pinned_plurk_icon {
   left: -10px;
 }
-/*私噗icon*/
-.plurk_icon.private {
-  margin: -10px
-}
-.char_updater {
-  display: none;
+.plurk_icon.coin {
+  margin-left: 15px;
 }
 
 /*   面板設定   */
