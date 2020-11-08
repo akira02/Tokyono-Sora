@@ -1,0 +1,109 @@
+<svg class="svg-snowscene" xmlns="http://www.w3.org/2000/svg">
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <circle class="snow" />
+  <script>
+  function getRandom(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+(function letItSnow(){
+  var snowflakes = document.querySelectorAll('.snow');
+  for (var i = 0; i < snowflakes.length; i++) {
+    var snowflake = snowflakes[i];
+    snowflake.setAttribute('cx', getRandom(1,100) + '%');
+    snowflake.setAttribute('cy', '-' + getRandom(1,100));
+    snowflake.setAttribute('r', getRandom(1,3));
+  }
+})();</script>
+<style>
+  .svg-snowscene {
+  width: 100%;
+}
+.snow {
+  fill: #fff; 
+  animation-name: snowing;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+    }
+.snow:nth-child(2n){
+    animation-delay: 1.5s;
+  }
+.snow:nth-child(3n){
+    animation-delay: 2.3s;
+    animation-duration: 3.3s;
+  }
+.snow:nth-child(4n){
+    animation-delay: 0.8s;
+    animation-duration: 3.2s;
+  }
+.snow:nth-child(5n){
+    animation-delay: 2.8s;
+  }
+
+@keyframes snowing {
+  0%{ fill-opacity: 1; }
+  100% { 
+    fill-opacity: 0;
+    transform: translateY(200px);
+  }
+}</style>
+</svg>
