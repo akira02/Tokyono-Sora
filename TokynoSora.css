@@ -114,7 +114,7 @@ body {
 ' {}:not(*) /* { */, /*
 }*/
 .cbox_left {
-    background: rgba(0, 0, 0, 0.8) !important;
+    background: black !important;
 }
 ' {}
 ' {}:not(*) /* { */, /*
