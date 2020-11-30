@@ -69,17 +69,19 @@
   color: white !important;
 }
 
+/* 通知器往下調整 */
+.timeline_control {
+  margin-top: -13px;
+}
+
 /* 改用模糊背景圖片 */
 .cboxAnchor:not(.response) .plurk_cnt,
-#form_holder {
+#form_holder,
+._lch_~.pop-window .pop-window-content,
+._lch_~.pop-window .pop-window-view iframe  {
   background-image: url(https://chiaki.uk/Zero-Memo/img/default-light.jpg) !important;
   background-position: center !important;
   background-size: cover !important;
   background-attachment: fixed !important;
   backdrop-filter: none !important;
-}
-
-/* 通知器往下調整 */
-.timeline_control {
-  margin-top: -13px;
 }

@@ -80,58 +80,28 @@ body {
 ' {}
 
 /*彈出視窗模糊*/
-' {}:not(*) /* { */, /*
-}*/
-.divplurk {
-    background: none !important;
-}
-' {}
-' {}:not(*) /* { */, /*
-}*/
-.pop-window-view {
+._lch_~.pop-window .divplurk,
+._lch_~.pop-window .pop-window-view,
+._lch_~.pop-window .response_box,
+._lch_~.pop-window .mini_form,
+._lch_~.pop-window .img-holder {
   background: none !important;
+}
+
+._lch_~.pop-window .pop-window-view {
   border-radius: 7px !important;
 }
-' {}
-' {}:not(*) /* { */, /*
-}*/
-.response_box {
-    background: none !important;
-}
-' {}
-' {}:not(*) /* { */, /*
-}*/
-.mini_form {
-   background: none !important;
-}
-' {}
-' {}:not(*) /* { */, /*
-}*/
-.img-holder {
-   background: none !important;
-}
-' {}
-' {}:not(*) /* { */, /*
-}*/
-.cbox_left {
+._lch_~.pop-window .cbox_left {
     background: black !important;
 }
-' {}
-' {}:not(*) /* { */, /*
-}*/
-.pop-window-content {
+._lch_~.pop-window .pop-window-content {
     background: rgba(255, 255, 255, 0.7) !important;
     backdrop-filter: saturate(180%) blur(20px);
 }
-' {}
-' {}:not(*) /* { */, /*
-}*/
-.pop-window-view iframe {
+._lch_~.pop-window .pop-window-view iframe {
     background: rgba(255, 255, 255, 0.9) !important;
     backdrop-filter: saturate(180%) blur(20px);
 }
-' {}
-
 
 /*   河道調整   */
 
