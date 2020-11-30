@@ -315,6 +315,9 @@ body {
 .char_updater {
   display: none;
 }
+.plurkForm.mini-mode.plurk_editor .input_holder {
+  width: 100%;
+}
 /*icon*/
 .plurk_icon {
   margin: -25px 0 0 18px;
@@ -350,7 +353,7 @@ body {
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.8);
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: saturate(180%) blur(20px);
-  z-index: 500;
+  z-index: 900;
 }
 #plurk-dashboard .dash-group-form .segment-content {
   min-height: 62px;
