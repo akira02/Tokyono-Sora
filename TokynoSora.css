@@ -20,9 +20,6 @@ body {
     "Microsoft Jhenghei", "微軟正黑體", sans-serif !important;
 }
 ' {}
-._lc_ {
-  height: 100vh;
-}
 .text_holder {
   line-height: 1.5em;
 }
