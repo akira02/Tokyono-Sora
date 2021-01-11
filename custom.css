@@ -74,6 +74,14 @@
   margin-top: -13px;
 }
 
+/* top_bar 顏色覆蓋 */
+' {}:not(*) /* { */, /*
+}*/
+.bar-color {
+    background-color: #000;
+}
+' {}
+
 /* 覆蓋掉噗浪原本的背景圖 */
 ._lch_ {
   background-image: url(https://chiaki.uk/Tokyono-Sora/img/default.jpg) !important;

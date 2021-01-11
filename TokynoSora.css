@@ -4,7 +4,6 @@
    https://github.com/akira02/Tokyono-Sora/
 */
 
-
 /*   整體控制   */
 
 .block_cnt {
@@ -77,33 +76,34 @@ body {
 ' {}
 
 /*彈出視窗模糊*/
-._lch_~.pop-window .divplurk,
-._lch_~.pop-window .pop-window-view,
-._lch_~.pop-window .response_box,
-._lch_~.pop-window .mini_form,
-._lch_~.pop-window .img-holder {
+._lch_ ~ .pop-window .divplurk,
+._lch_ ~ .pop-window .pop-window-view,
+._lch_ ~ .pop-window .response_box,
+._lch_ ~ .pop-window .mini_form,
+._lch_ ~ .pop-window .img-holder {
   background: none !important;
 }
 
-._lch_~.pop-window .pop-window-view {
+._lch_ ~ .pop-window .pop-window-view {
   border-radius: 7px !important;
 }
-._lch_~.pop-window .cbox_left {
-    background: black !important;
+._lch_ ~ .pop-window .cbox_left {
+  background: black !important;
 }
-._lch_~.pop-window .pop-window-content {
-    background: rgba(255, 255, 255, 0.7) !important;
-    backdrop-filter: saturate(180%) blur(20px);
+._lch_ ~ .pop-window .pop-window-content {
+  background: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: saturate(180%) blur(20px);
 }
-._lch_~.pop-window .pop-window-view iframe {
-    background: rgba(255, 255, 255, 0.9) !important;
-    backdrop-filter: saturate(180%) blur(20px);
+._lch_ ~ .pop-window .pop-window-view iframe {
+  background: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: saturate(180%) blur(20px);
 }
 
 /*   河道調整   */
 
 #timeline_holder {
   height: calc(100vh - 160px) !important;
+  background: none;
 }
 /* 時間標籤 */
 .bottom_start {
@@ -276,7 +276,8 @@ body {
   height: 25px;
 }
 /*回覆框*/
-.plurkForm.mini-mode .input_holder, .mini_form .input_holder {
+.plurkForm.mini-mode .input_holder,
+.mini_form .input_holder {
   border-radius: 10px;
 }
 .char_updater {
@@ -355,7 +356,7 @@ body {
   margin-left: 10px;
 }
 #main_poster .icons_holder {
-   min-width: 190px;
+  min-width: 190px;
 }
 .m_qualifier {
   border-radius: 15px;
@@ -373,7 +374,8 @@ body {
   background: none;
   border-radius: 150px;
   max-height: 115px;
-  transition: max-height 1s, transform 1s, background 0.5s, border-radius 0.3s 1s;
+  transition: max-height 1s, transform 1s, background 0.5s,
+    border-radius 0.3s 1s;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: saturate(180%) blur(20px);
@@ -504,7 +506,7 @@ body {
     0px 0px 10px rgb(118, 18, 3) !important;
   transition: transform 1s, font-size 1s;
 }
-.dash-stats-karma .help{
+.dash-stats-karma .help {
   display: none;
 }
 /*背景燈絲*/
@@ -523,7 +525,6 @@ body {
   transform: translate(20px, 20px);
   font-size: 50px;
 }
-
 
 /*   底部設定   */
 
