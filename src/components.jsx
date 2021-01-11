@@ -279,7 +279,7 @@ export function App() {
         style={images ? `background-image: url(${images.plurk.objectURL})` : ""}
       >
         <h1>
-          Tokyono Sora 模糊背景產生器 <small>beta</small>
+          Tokyono Sora 噗文模糊背景產生器 <small>beta</small>
         </h1>
 
         <hr />
@@ -301,6 +301,15 @@ export function App() {
               喜歡請追蹤千秋的噗浪&lt;3
               <br />
               フォローしてください
+            </a>
+            <a
+              href="https://www.plurk.com/egg820/invite/4"
+              class="btn btn-outline-danger"
+              role="button"
+            >
+              技術支援
+              <br />
+              欸個
             </a>
           </div>
         </div>
