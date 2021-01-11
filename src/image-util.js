@@ -1,8 +1,4 @@
 export async function decodeImage(blob) {
-  if (typeof ImageBitmap !== "undefined") {
-    return createImageBitmap(blob);
-  }
-
   const url = URL.createObjectURL(blob);
   try {
     const image = new Image();
