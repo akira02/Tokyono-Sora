@@ -41,7 +41,7 @@ function getImage(formData, name) {
 function OptionsInput({ name, defaultBlur, defaultBrightness }) {
   return (
     <div class="form-group">
-      <label>亮度 明るさを調整</label>
+      <label>亮度 Brightness</label>
       <input
         type="range"
         name={name + "-brightness"}
@@ -50,7 +50,7 @@ function OptionsInput({ name, defaultBlur, defaultBrightness }) {
         defaultValue={defaultBrightness}
       />
 
-      <label>模糊 ぼかし</label>
+      <label>模糊 Blur</label>
       <input
         type="range"
         name={name + "-blur"}
@@ -91,11 +91,12 @@ function ConfigPanel({ onSubmit }) {
         <h3>背景画像選択</h3>
         <ImageInput name="image-input" />
 
-        <h3>噗文白背景 淡い色の背景</h3>
-        <OptionsInput name="plurk" defaultBrightness="70" defaultBlur="300" />
+        <h3>模糊與透明程度調整</h3>
+        <OptionsInput name="plurk" defaultBrightness="80" defaultBlur="500" />
 
+        <h2>Step.2 預覽</h2>
         <button type="submit" class="btn btn-primary">
-          預覽設定プレビュー！
+          預覽Preview
         </button>
       </form>
     </Fragment>
@@ -105,7 +106,6 @@ function ConfigPanel({ onSubmit }) {
 function Preview({ images }) {
   return (
     <Fragment>
-      <h2>Step.2 預覽 プレビュー</h2>
       <div
         class="preview background-timeline"
         style={
@@ -122,7 +122,21 @@ function Preview({ images }) {
           <span class="say">
             <b>說</b>
           </span>
+          <br/>
           你好，謝謝你的使用OwO
+        </div>
+        <div
+          class="preview-box background-plurk"
+          style={
+            images ? `background-image: url(${images.plurk.objectURL})` : ""
+          }
+        >
+          <b style="color:#63C6D3;">涼風青葉</b>
+          <span class="say">
+            <b>說</b>
+          </span>
+          <br/>
+          這是淺色暱稱的狀況
         </div>
       </div>
     </Fragment>
@@ -158,16 +172,18 @@ function Uploader({ images, onDone }) {
 
   return (
     <Fragment>
+      <h2>Step.3 上傳圖片</h2>
       <button
         type="button"
         class="btn btn-primary"
         onClick={handleClick}
         disabled={!canUpload}
       >
-        確認產生CSS
+        上傳產生CSS
       </button>
+      <br/>
       <span>
-        画像をアップロードする、少々お待ちください((要等蠻久的，好了我會彈個提示
+        要等蠻久的，好了我會彈個提示 <br/>Please wait<br/>
       </span>
     </Fragment>
   );
@@ -181,14 +197,12 @@ function Result({ css }) {
   };
   return (
     <Fragment>
-      <h2>領取CSS</h2>
       <textarea ref={textarea} class="form-control" style="max-height: 500px">
         {css}
       </textarea>
       <button type="button" class="btn btn-default" onClick={handleClick}>
         點我複製
       </button>
-      <span>コピーする！</span>
     </Fragment>
   );
 }

@@ -1,6 +1,5 @@
 function generateReplacement(urls) {
-  return `
-/* 以上傳圖片覆蓋掉噗浪原本的背景圖 */
+  return `/* 以上傳圖片覆蓋掉噗浪原本的背景圖 */
 body {
   background-image: url(${urls.timeline}) !important;
   background-position: center !important;
@@ -20,8 +19,7 @@ body {
   background-size: cover !important;
   background-attachment: fixed !important;
   backdrop-filter: none !important;
-}
-`;
+}`;
 }
 
 export function updateCss(css, urls) {
