@@ -1,0 +1,24 @@
+{
+  "name": "tokyono-sora-pages",
+  "version": "1.0.0",
+  "description": "Github page for Tokyono-Sora",
+  "dependencies": {
+    "preact": "^10.5.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-react-jsx": "^7.12.12",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
+    "prettier": "^2.2.1",
+    "webpack": "^5.11.0",
+    "webpack-cli": "^4.3.0"
+  },
+  "scripts": {
+    "build": "webpack",
+    "prettier": "prettier --write index.html webpack.config.js 'src/**/*'"
+  },
+  "repository": "akira02/Tokyono-Sora",
+  "homepage": "https://chiaki.uk/Tokyono-Sora/"
+}
