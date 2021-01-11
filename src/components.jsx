@@ -95,8 +95,9 @@ function ConfigPanel({ onSubmit }) {
         <OptionsInput name="plurk" defaultBrightness="80" defaultBlur="500" />
 
         <h2>Step.2 預覽</h2>
+        <span>暫不支援即時預覽，更改數值之後要再點一次計算模糊圖片喔</span>
         <button type="submit" class="btn btn-primary">
-          預覽Preview
+          計算Preview
         </button>
       </form>
     </Fragment>
@@ -183,7 +184,8 @@ function Uploader({ images, onDone }) {
       </button>
       <br/>
       <span>
-        要等蠻久的，好了我會彈個提示 <br/>Please wait<br/>
+        要等蠻久的，好了我會彈個提示 <br/>Please wait
+        <br/>
       </span>
     </Fragment>
   );
