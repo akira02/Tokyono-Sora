@@ -11,7 +11,7 @@
     />
 
     <style>
-      body {
+      .root {
         background-image: url(./img/default.jpg);
         background-position: center;
         background-size: cover;
@@ -19,6 +19,7 @@
         display: flex;
         align-items: center;
         min-height: 100vh;
+        min-width: 100vw;
       }
 
       .container {
@@ -44,7 +45,6 @@
       }
 
       .background-timeline,
-      .background-dashboard,
       .background-plurk {
         background-position: center;
         background-size: cover;
@@ -54,15 +54,6 @@
 
       .background-timeline {
         background-image: url(./img/default.jpg);
-      }
-
-      .background-dashboard {
-        background-image: url(./img/default-dark.jpg);
-        width: 30%;
-        height: 100%;
-        margin: 0;
-        color: white;
-        padding: 8%;
       }
 
       .background-plurk {

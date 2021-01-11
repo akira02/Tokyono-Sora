@@ -21,17 +21,6 @@ body {
   background-attachment: fixed !important;
   backdrop-filter: none !important;
 }
-
-/* 黑色模糊背景改為固定圖片 */
-#time_show,
-.dash-group-left,
-.dash-group-right {
-  background-image: url(${urls.dashboard}) !important;
-  background-position: center !important;
-  background-size: cover !important;
-  background-attachment: fixed !important;
-  backdrop-filter: none !important;
-}
 `;
 }
 

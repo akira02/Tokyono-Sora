@@ -78,7 +78,6 @@ function ConfigPanel({ onSubmit }) {
     onSubmit({
       image: getImage(formData, "image-input"),
       options: {
-        dashboard: getOptions(formData, "dashboard"),
         plurk: getOptions(formData, "plurk"),
       },
     });
@@ -91,13 +90,6 @@ function ConfigPanel({ onSubmit }) {
       <form onSubmit={handleSubmit}>
         <h3>背景画像選択</h3>
         <ImageInput name="image-input" />
-
-        <h3>資訊面板黑背景 深い色の背景</h3>
-        <OptionsInput
-          name="dashboard"
-          defaultBrightness="-70"
-          defaultBlur="300"
-        />
 
         <h3>噗文白背景 淡い色の背景</h3>
         <OptionsInput name="plurk" defaultBrightness="70" defaultBlur="300" />
@@ -131,15 +123,6 @@ function Preview({ images }) {
             <b>說</b>
           </span>
           你好，謝謝你的使用OwO
-        </div>
-        <div
-          class="preview-box background-dashboard"
-          style={
-            images ? `background-image: url(${images.dashboard.objectURL})` : ""
-          }
-        >
-          ハオ！涼風千秋です！<br /><br />
-          這裡是右邊的資訊欄位
         </div>
       </div>
     </Fragment>
@@ -229,7 +212,7 @@ async function generateImages(config) {
     objectURL: URL.createObjectURL(sourceBlob),
   };
   await Promise.all(
-    ["dashboard", "plurk"].map(async (key) => {
+    ["plurk"].map(async (key) => {
       const options = config.options[key];
       const blob = await renderImage(sourceImage, {
         ...options,
@@ -271,31 +254,41 @@ export function App() {
   };
 
   return (
-    <div class="container">
-      <h1>
-        Tokyono Sora 模糊背景產生器 <small>beta</small>
-      </h1>
+    <div
+      class="root"
+      style={
+        images ? `background-image: url(${images.timeline.objectURL})` : ""
+      }
+    >
+      <div
+        class="container"
+        style={images ? `background-image: url(${images.plurk.objectURL})` : ""}
+      >
+        <h1>
+          Tokyono Sora 模糊背景產生器 <small>beta</small>
+        </h1>
 
-      <hr />
+        <hr />
 
-      <div class="row">
-        <div class="col-md-6">
-          <ConfigPanel onSubmit={handleNewConfig} />
-        </div>
-        <div class="col-md-6">
-          <Preview images={images} />
-          <Uploader images={images} onDone={handleUploadDone} />
-          <Result css={css} />
+        <div class="row">
+          <div class="col-md-6">
+            <ConfigPanel onSubmit={handleNewConfig} />
+          </div>
+          <div class="col-md-6">
+            <Preview images={images} />
+            <Uploader images={images} onDone={handleUploadDone} />
+            <Result css={css} />
 
-          <a
-            href="https://www.plurk.com/akira02/invite/4"
-            class="btn btn-outline-danger"
-            role="button"
-          >
-            喜歡請追蹤千秋的噗浪&lt;3
-            <br />
-            フォローしてください
-          </a>
+            <a
+              href="https://www.plurk.com/akira02/invite/4"
+              class="btn btn-outline-danger"
+              role="button"
+            >
+              喜歡請追蹤千秋的噗浪&lt;3
+              <br />
+              フォローしてください
+            </a>
+          </div>
         </div>
       </div>
     </div>
