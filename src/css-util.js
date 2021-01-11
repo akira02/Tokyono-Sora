@@ -1,6 +1,6 @@
 function generateReplacement(urls) {
   return `/* 以上傳圖片覆蓋掉噗浪原本的背景圖 */
-body {
+._lch_ {
   background-image: url(${urls.timeline}) !important;
   background-position: center !important;
   background-size: cover !important;
