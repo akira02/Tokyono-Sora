@@ -75,7 +75,7 @@
 }
 
 /* 覆蓋掉噗浪原本的背景圖 */
-body {
+._lch_ {
   background-image: url(https://chiaki.uk/Tokyono-Sora/img/default.jpg) !important;
   background-position: center !important;
   background-size: cover !important;
@@ -89,17 +89,6 @@ body {
 ._lch_ ~ .pop-window .pop-window-content,
 ._lch_ ~ .pop-window .pop-window-view iframe {
   background-image: url(https://chiaki.uk/Tokyono-Sora/img/default-light.jpg) !important;
-  background-position: center !important;
-  background-size: cover !important;
-  background-attachment: fixed !important;
-  backdrop-filter: none !important;
-}
-
-/* 黑色模糊背景改為固定圖片 */
-#time_show,
-.dash-group-left,
-.dash-group-right {
-  background-image: url(https://chiaki.uk/Tokyono-Sora/img/default-dark.jpg) !important;
   background-position: center !important;
   background-size: cover !important;
   background-attachment: fixed !important;
