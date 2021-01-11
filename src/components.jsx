@@ -95,7 +95,7 @@ function ConfigPanel({ onSubmit }) {
         <h3>資訊面板黑背景 深い色の背景</h3>
         <OptionsInput
           name="dashboard"
-          defaultBrightness="-50"
+          defaultBrightness="-70"
           defaultBlur="300"
         />
 
