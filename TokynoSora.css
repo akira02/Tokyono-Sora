@@ -133,6 +133,14 @@ body {
 #bottom_line {
   display: none !important;
 }
+/*通知器*/
+#timeline_control_holder a {
+  border-radius: 25px;
+}
+.unread_generic {
+  border-radius: 12px;
+  background-color: #ff574d;
+}
 /*右下浮動發噗時間*/
 #time_show {
   top: auto !important;
@@ -204,7 +212,8 @@ body {
 }
 /*動詞*/
 .qualifier {
-  padding: 0 3px 0 3px;
+  padding: 0 5px 0 5px;
+  border-radius: 12px;
 }
 /*拉寬噗文*/
 .cboxAnchor:not(.response) .td_cnt {
