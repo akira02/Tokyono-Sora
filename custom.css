@@ -74,11 +74,11 @@
   margin-top: -13px;
 }
 
-/* top_bar 顏色覆蓋 */
+/* top_bar 背景移除 */
 ' {}:not(*) /* { */, /*
 }*/
 .bar-color {
-    background-color: #000;
+    background: none;
 }
 ' {}
 

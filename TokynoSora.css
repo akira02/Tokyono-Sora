@@ -1,5 +1,5 @@
 /* 
-   Tokyono-Sora 
+   Tokyono-Sora v1.1
    Design by Chiaki.C https://plurk.com/akira02
    https://github.com/akira02/Tokyono-Sora/
 */
@@ -22,21 +22,20 @@ body {
 .text_holder {
   line-height: 1.5em;
 }
+
 /*捲軸調整*/
 ' {}:not(*) /* { */, /*
 }*/
 ::-webkit-scrollbar {
   width: 5px;
 }
-' {}
-' {}:not(*) /* { */, /*
+:not(*) /* { */, /*
 }*/
 ::-webkit-scrollbar-track {
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
-' {}
-' {}:not(*) /* { */, /*
+:not(*) /* { */, /*
 }*/
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 4px;
@@ -66,12 +65,26 @@ body {
 .loading-div > .cnt {
   display: none;
 }
+._lch_ ~ .pop-window .loading > img{
+  display: none;
+}
+._lch_ ~ .pop-window .loading::after{
+  content: ' ';
+  display:block;
+  position: relative;
+  background: url(https://raw.githubusercontent.com/akira02/Tokyono-Sora/main/loading.svg)
+    no-repeat;
+  background-size: 90px;
+  width: 90px;
+  height: 90px;
+  left: calc(50% - 45px);
+}
 
 /*頂端功能列模糊*/
 ' {}:not(*) /* { */, /*
 }*/
 #top_bar {
-    backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: blur(20px);
 }
 ' {}
 
@@ -98,6 +111,13 @@ body {
   background: rgba(255, 255, 255, 0.9) !important;
   backdrop-filter: saturate(180%) blur(20px);
 }
+/*彈出視窗輸入框圓角*/
+._lch_ ~ .pop-window .plurkForm.mini-mode .input_holder,
+._lch_ ~ .pop-window .mini_form .input_holder {
+  border-radius: 10px;
+}
+._lch_ ~ .pop-window .m_qualifier {
+  border-radius: 10px;}
 
 /*   河道調整   */
 
@@ -105,7 +125,7 @@ body {
   height: calc(100vh - 160px) !important;
   background: none;
 }
-/* 時間標籤 */
+/*時間標籤*/
 .bottom_start {
   position: absolute;
   height: 18px;
@@ -238,7 +258,7 @@ body {
 .new .plurk_cnt {
   box-shadow: 0px 0px 9px 0px rgba(200, 50, 0, 0.74);
 }
-/* 避免噗文展開後被切掉 */
+/*避免噗文展開後被切掉*/
 #timeline_cnt,
 .block_cnt {
   overflow-y: visible !important;
@@ -249,7 +269,7 @@ body {
   top: 0;
   bottom: 0;
 }
-/* 回應計數 */
+/*回應計數*/
 .td_response_count {
   display: flex;
   align-items: center;
@@ -265,7 +285,7 @@ body {
   border-radius: 50%;
   background: none;
 }
-/* 回應計數(未讀) */
+/*回應計數(未讀)*/
 .new .response_count {
   position: relative !important;
   background-color: #ff574d;
@@ -459,6 +479,11 @@ body {
 }
 #plurk-dashboard .dash-segment #dash-stats table td {
   color: white;
+}
+/*按鈕*/
+#plurk-dashboard a.friend_man {
+  border-radius: 15px;
+  transition: background-color 0.6s ease, color 0.6s ease;
 }
 
 /* Karma值 */
