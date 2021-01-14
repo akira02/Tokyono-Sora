@@ -300,6 +300,9 @@ body {
 .mini_form .input_holder {
   border-radius: 10px;
 }
+.plurkForm.mini-mode .icons_holder {
+  margin: 0;
+}
 .char_updater {
   display: none;
 }
