@@ -85,6 +85,7 @@ body {
 }*/
 #top_bar {
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 ' {}
 
@@ -106,10 +107,12 @@ body {
 ._lch_ ~ .pop-window .pop-window-content {
   background: rgba(255, 255, 255, 0.7) !important;
   backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
 }
 ._lch_ ~ .pop-window .pop-window-view iframe {
   background: rgba(255, 255, 255, 0.9) !important;
   backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
 }
 /*彈出視窗輸入框圓角*/
 ._lch_ ~ .pop-window .plurkForm.mini-mode .input_holder,
@@ -150,6 +153,7 @@ body {
   padding: 10px !important;
   background-color: rgba(0, 0, 0, 0.6) !important;
   backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
 }
 #time_show span {
   color: #fff !important;
@@ -174,6 +178,7 @@ body {
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.8) !important;
   backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
 }
 /*噗文寬度*/
 .plurk.cboxAnchor:not(.response) {
@@ -212,8 +217,7 @@ body {
 }
 /*動詞*/
 .qualifier {
-  padding: 0 5px 0 5px;
-  border-radius: 12px;
+  padding: 0 3px 0 3px;
 }
 /*拉寬噗文*/
 .cboxAnchor:not(.response) .td_cnt {
@@ -258,6 +262,7 @@ body {
 #form_holder {
   background: rgba(255, 255, 255, 0.8) !important;
   backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
   border-radius: 0 0 7px 7px;
 }
 .icons_holder .pif-emoticon:after {
@@ -353,6 +358,7 @@ body {
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.8);
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
   z-index: 900;
 }
 #plurk-dashboard .dash-group-form .segment-content {
@@ -411,6 +417,7 @@ body {
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
   transform: translate(230px, 0);
   z-index: 900;
 }
@@ -463,6 +470,7 @@ body {
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
   transform: translate(540px, 0);
   z-index: 900;
 }
