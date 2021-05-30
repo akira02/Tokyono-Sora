@@ -1,5 +1,5 @@
 /* 
-   Tokyono-Sora v1.1
+   Tokyono-Sora v1.1.1
    Design by Chiaki.C https://plurk.com/akira02
    https://github.com/akira02/Tokyono-Sora/
 */
@@ -483,6 +483,7 @@ body {
 .dash-group-left:hover + .dash-group-right {
   background: none;
   backdrop-filter: none;
+  -webkit-backdrop-filter: none;
   transform: translate(540px, -50px);
   pointer-events: none;
 }
