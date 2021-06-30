@@ -1,0 +1,72 @@
+.root {
+  background-image: url(./static/img/default.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.container {
+  vertical-align: middle;
+  background-image: url(./static/img/default-light.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 50px;
+  border-radius: 8px;
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+.input-group-btn > select.btn {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-color: #ccc;
+}
+
+.background-timeline,
+.background-plurk {
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+}
+
+.background-timeline {
+  background-image: url(./static/img/default.jpg);
+}
+
+.background-plurk {
+  background-image: url(./static/img/default-light.jpg);
+  align-self: center;
+  border-radius: 8px;
+  color: black;
+  padding: 20px;
+  display: inline;
+}
+
+.say {
+  margin: 0 5px;
+  color: #e2560b;
+}
+
+.preview {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  justify-content: space-around;
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.8);
+}
+
+.preview-box b {
+  text-shadow: #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px,
+    #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px;
+}

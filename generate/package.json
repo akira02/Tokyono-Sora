@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^3.4.1",
+    "preact": "^10.5.13"
+  },
+  "devDependencies": {
+    "preact-cli": "^3.2.2",
+    "preact-render-to-string": "^5.1.19",
+    "prettier": "^2.3.2"
+  },
+  "scripts": {
+    "build": "preact build --no-sw",
+    "dev": "preact watch --no-sw",
+    "prettier": "prettier --write src"
+  },
+  "browserslist": "defaults and supports webgl and not IE 11"
+}
