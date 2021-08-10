@@ -86,7 +86,6 @@ body {
 #top_bar {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-   height: 34px;
 }
 ' {}
 
