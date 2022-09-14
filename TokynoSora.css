@@ -457,6 +457,32 @@ body {
 #profile_pic {
   border-radius: 50% !important;
 }
+/*他人編輯你暱稱的欄位*/
+#dash-profile .profile-info {
+  display: flex;
+}
+#plurk-dashboard .dash-segment-profile #dash-profile .profile-info .edit-alias, 
+#plurk-dashboard .dash-segment-profile #dash-profile .profile-info .remove-alias {
+  max-width: 0px;
+  transition: all .3s;
+  margin-right: 0px;
+}
+#plurk-dashboard .dash-segment-profile #dash-profile:hover .profile-info .edit-alias, 
+#plurk-dashboard .dash-segment-profile #dash-profile:hover .profile-info .remove-alias {
+  max-width: 10px;
+  display: block;
+  margin-right: 8px;
+}
+#dash-profile .profile-info #alias {
+  transition: all .5s;
+}
+#dash-profile .profile-info #alias[contenteditable="true"] {
+  color: black;
+  background-color: white;
+  padding: 0 8px;
+  min-width: 100px;
+  border-radius: 999px;
+}
 
 /*統計面板*/
 .dash-group-right {
