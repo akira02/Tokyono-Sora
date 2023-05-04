@@ -10,20 +10,20 @@
   transition: 0s;
 }
 
-' {}:not(*) /* { */, /*
-}*/
-body {
+:is(url({)),
+body,
+html,
+:is(url(})) {
   overflow-y: auto;
-  font-family: "M 翔鶴黑體 TC", "PingFang TC", "LiHei Pro", "Heiti TC",
-    "Source Han Sans TC", "Noto Sans TC", "Hiragino Sans", "Century Gothic",
-    "Microsoft Jhenghei", "微軟正黑體", sans-serif !important;
+  font-family: 'M 翔鶴黑體 TC', 'PingFang TC', 'LiHei Pro', 'Heiti TC', 'Source Han Sans TC', 'Noto Sans TC',
+    'Hiragino Sans', 'Century Gothic', 'Microsoft Jhenghei', '微軟正黑體', sans-serif !important;
 }
-:not(*) /* { */, /*
-}*/
-.text_holder {
-	line-height: 1.5em;
+
+:is(url({)),
+.text_holder,
+:is(url(})) {
+  line-height: 1.5em;
 }
-' {}
 
 /*捲軸調整*/
 ' {}:not(*) /* { */, /*
@@ -46,42 +46,6 @@ body {
 }
 ' {}
 
-/*載入動畫*/
-.loading > img {
-  background: url(https://raw.githubusercontent.com/akira02/Tokyono-Sora/main/loading.svg)
-    no-repeat;
-  width: 90px;
-  height: 90px;
-  background-size: 90px;
-  padding-left: 90px;
-  margin-top: 17px;
-}
-.loading-div {
-  background: url(https://raw.githubusercontent.com/akira02/Tokyono-Sora/main/loading.svg)
-    no-repeat;
-  background-size: 120px;
-  width: 120px;
-  height: 120px;
-  left: 50%;
-}
-.loading-div > .cnt {
-  display: none;
-}
-._lch_ ~ .pop-window .loading > img{
-  display: none;
-}
-._lch_ ~ .pop-window .loading::after{
-  content: ' ';
-  display:block;
-  position: relative;
-  background: url(https://raw.githubusercontent.com/akira02/Tokyono-Sora/main/loading.svg)
-    no-repeat;
-  background-size: 90px;
-  width: 90px;
-  height: 90px;
-  left: calc(50% - 45px);
-}
-
 /*頂端功能列模糊*/
 ' {}:not(*) /* { */, /*
 }*/
@@ -90,6 +54,39 @@ body {
     -webkit-backdrop-filter: blur(20px);
 }
 ' {}
+
+/*載入動畫*/
+.loading > img {
+  background: url(https://raw.githubusercontent.com/akira02/Tokyono-Sora/main/loading.svg) no-repeat;
+  width: 90px;
+  height: 90px;
+  background-size: 90px;
+  padding-left: 90px;
+  margin-top: 17px;
+}
+.loading-div {
+  background: url(https://raw.githubusercontent.com/akira02/Tokyono-Sora/main/loading.svg) no-repeat;
+  background-size: 120px;
+  width: 120px;
+  height: 120px;
+  left: 50%;
+}
+.loading-div > .cnt {
+  display: none;
+}
+._lch_ ~ .pop-window .loading > img {
+  display: none;
+}
+._lch_ ~ .pop-window .loading::after {
+  content: ' ';
+  display: block;
+  position: relative;
+  background: url(https://raw.githubusercontent.com/akira02/Tokyono-Sora/main/loading.svg) no-repeat;
+  background-size: 90px;
+  width: 90px;
+  height: 90px;
+  left: calc(50% - 45px);
+}
 
 /*彈出視窗模糊*/
 ._lch_ ~ .pop-window .divplurk,
@@ -122,7 +119,8 @@ body {
   border-radius: 10px;
 }
 ._lch_ ~ .pop-window .m_qualifier {
-  border-radius: 10px;}
+  border-radius: 10px;
+}
 
 /*   河道調整   */
 
@@ -182,6 +180,7 @@ body {
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
 }
+
 /*噗文寬度*/
 .plurk.cboxAnchor:not(.response) {
   max-width: 430px;
@@ -202,8 +201,8 @@ body {
 .name {
   font-size: 1.1em;
   font-weight: 800;
-  text-shadow: #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px,
-    #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px;
+  text-shadow: #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px,
+    #fff 0px 0px 1px;
 }
 /*噗文大頭貼*/
 .td_img {
@@ -319,11 +318,11 @@ body {
 .plurkForm.mini-mode .icons_holder {
   margin: 0;
 }
-.char_updater {
-  display: none;
-}
 .plurkForm.mini-mode.plurk_editor .input_holder {
   width: 100%;
+}
+.input_holder .m_qualifier {
+  border-radius: 10px;
 }
 /*icon*/
 .plurk_icon {
@@ -354,8 +353,8 @@ body {
   bottom: 35px !important;
   left: 50%;
   transform: translate(-50%, 0);
-  width: calc(100vw - 150px) !important;
-  max-width: 950px !important;
+  width: calc(100vw - 120px) !important;
+  max-width: 1000px !important;
   border-radius: 30px;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.8);
   background-color: rgba(255, 255, 255, 0.6);
@@ -363,44 +362,68 @@ body {
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   z-index: 900;
 }
+/*發文面板尺寸控制*/
 #plurk-dashboard .dash-group-form .segment-content {
-  min-height: 62px;
+  min-height: 0;
+  padding: 7px;
 }
 .dash-group-form:hover {
   z-index: 1100;
 }
-.plurkForm {
+/*發文工具列排列設定*/
+#main_poster .plurkForm {
   display: flex;
   align-items: flex-end;
-  margin: 0 0 5px 3px;
+  padding: 0;
+  margin: 0;
   flex-wrap: wrap;
-  justify-content: flex-end;
 }
-.submit_img {
-  order: 3;
-  width: auto;
-  border-radius: 20px;
-  padding: 0 15px 0 15px;
-  line-height: 35px;
-  margin-right: 5px;
+/*發文選項動詞*/
+#main_poster .m_qualifier {
+  border-radius: 15px;
+  padding: 3px 11px 4px 10px;
 }
-.input_holder {
+/*發文輸入欄位*/
+#main_poster .input_holder {
   order: 1;
   flex-grow: 1;
   border-radius: 20px;
   padding-right: 10px;
   min-width: 200px;
 }
-.icons_holder {
+/*發文選項icons*/
+#main_poster .icons_holder {
   order: 2;
+  min-width: 190px;
+  margin: 0;
   margin-left: 10px;
 }
-#main_poster .icons_holder {
-  min-width: 190px;
+/*發文按鈕*/
+#main_poster .submit_img {
+  order: 3;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 0 15px 0 15px;
+  line-height: 35px;
+  margin: 0;
 }
-.m_qualifier {
-  border-radius: 15px;
-  padding: 3px 11px 4px 10px;
+/*發文設定提示字*/
+#main_poster .plurk_to {
+  order: 4;
+  margin-right: 2px;
+}
+/*字數提示字*/
+#main_poster .char_updater {
+  order: 5;
+  padding-left: 5px;
+  flex-basis: 100%;
+  color: black;
+}
+.plurkForm * {
+  order: 10;
 }
 
 /*自介面板*/
@@ -414,8 +437,7 @@ body {
   background: none;
   border-radius: 150px;
   max-height: 115px;
-  transition: max-height 1s, transform 1s, background 0.5s,
-    border-radius 0.3s 1s;
+  transition: max-height 1s, transform 1s, background 0.5s, border-radius 0.3s 1s;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: saturate(180%) blur(20px);
@@ -453,35 +475,36 @@ body {
   padding-top: 5px;
   position: static !important;
 }
-/*大頭貼圓角*/
-#profile_pic {
-  border-radius: 50% !important;
-}
 /*他人編輯你暱稱的欄位*/
 #dash-profile .profile-info {
   display: flex;
 }
-#plurk-dashboard .dash-segment-profile #dash-profile .profile-info .edit-alias, 
+#plurk-dashboard .dash-segment-profile #dash-profile .profile-info .edit-alias,
 #plurk-dashboard .dash-segment-profile #dash-profile .profile-info .remove-alias {
   max-width: 0px;
-  transition: all .3s;
+  transition: all 0.3s;
   margin-right: 0px;
 }
-#plurk-dashboard .dash-segment-profile #dash-profile:hover .profile-info .edit-alias, 
+#plurk-dashboard .dash-segment-profile #dash-profile:hover .profile-info .edit-alias,
 #plurk-dashboard .dash-segment-profile #dash-profile:hover .profile-info .remove-alias {
   max-width: 10px;
   display: block;
   margin-right: 8px;
 }
 #dash-profile .profile-info #alias {
-  transition: all .5s;
+  transition: all 0.5s;
 }
-#dash-profile .profile-info #alias[contenteditable="true"] {
+#dash-profile .profile-info #alias[contenteditable='true'] {
   color: black;
   background-color: white;
   padding: 0 8px;
   min-width: 100px;
   border-radius: 999px;
+}
+
+/*大頭貼圓角*/
+#profile_pic {
+  border-radius: 50% !important;
 }
 
 /*統計面板*/
@@ -541,15 +564,8 @@ body {
 }
 @font-face {
   font-family: nixie;
-  src: url("https://chiaki.uk/assets/AkiNixieNumber-Regular.woff2")
-      format("woff2"),
-    url("https://chiaki.uk/assets/AkiNixieNumber-Regular.woff") format("woff");
-}
-@font-face {
-  font-family: nixie2;
-  src: url("https://chiaki.uk/assets/AkiNixieNumber-karma.woff2")
-      format("woff2"),
-    url("https://chiaki.uk/assets/AkiNixieNumber-karma.woff") format("woff");
+  src: url('https://chiaki.uk/assets/AkiNixieNumber-Regular.woff2') format('woff2'),
+    url('https://chiaki.uk/assets/AkiNixieNumber-Regular.woff') format('woff');
 }
 .karma_hover {
   display: flex;
@@ -576,8 +592,7 @@ body {
   padding: 0.2em;
   padding-bottom: 0.1em;
   color: #ff9b28;
-  text-shadow: 0px 0px 6px rgba(255, 65, 0, 0.7), 0px 0px 20px #ff8000,
-    0px 0px 10px rgb(118, 18, 3) !important;
+  text-shadow: 0px 0px 6px rgba(255, 65, 0, 0.7), 0px 0px 20px #ff8000, 0px 0px 10px rgb(118, 18, 3) !important;
   transition: transform 1s, font-size 1s;
 }
 .dash-stats-karma .help {
@@ -590,7 +605,7 @@ body {
   left: 0.2em;
   opacity: 0.4;
   color: #de8159;
-  content: "$$$$$$";
+  content: '$$$$$$';
 }
 .dash-stats-karma {
   margin: 0 !important;
