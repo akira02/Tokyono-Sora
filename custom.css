@@ -63,25 +63,6 @@
   content: "大小姐♂";
 }
 
-/* 下方時間列顏色改成黑底 */
-.bottom_start {
-  background: black !important;
-  color: white !important;
-}
-
-/* 通知器往下調整 */
-.timeline_control {
-  margin-top: -13px;
-}
-
-/* top_bar 背景移除 */
-' {}:not(*) /* { */, /*
-}*/
-.bar-color {
-    background: none;
-}
-' {}
-
 /* 覆蓋掉噗浪原本的背景圖 */
 ._lch_ {
   background-image: url(https://chiaki.uk/Tokyono-Sora/img/default.jpg) !important;

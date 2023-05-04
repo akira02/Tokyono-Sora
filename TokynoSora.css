@@ -1,8 +1,23 @@
 /* 
-   Tokyono-Sora v1.1.1
+   Tokyono-Sora v1.2.0
    Design by Chiaki.C https://plurk.com/akira02
    https://github.com/akira02/Tokyono-Sora/
 */
+
+:is(url({)),
+html,
+:is(url(})) {
+  /*噗文高度*/
+  --plurk_max_height: calc(8vh - 30px);
+  /*噗文寬度*/
+  --plurk_max_width: 350px;
+  /*噗文字體大小*/
+  --plurk_font_size: 14px;
+  /*噗文背景色*/
+  --plurk_bg_color: rgba(255, 255, 255, 0.8);
+  /*模糊程度*/
+  --blur-px: blur(20px);
+}
 
 /*   整體控制   */
 
@@ -46,12 +61,18 @@ html,
 }
 ' {}
 
-/*頂端功能列模糊*/
+/*頂端top_bar模糊*/
 ' {}:not(*) /* { */, /*
 }*/
 #top_bar {
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: var(--blur-px);
+    -webkit-backdrop-filter: var(--blur-px);
+}
+/*top_bar背景移除 */
+:not(*) /* { */, /*
+}*/
+.bar-color {
+    background: none;
 }
 ' {}
 
@@ -105,13 +126,13 @@ html,
 }
 ._lch_ ~ .pop-window .pop-window-content {
   background: rgba(255, 255, 255, 0.7) !important;
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) var(--blur-px);
+  -webkit-backdrop-filter: saturate(180%) var(--blur-px);
 }
 ._lch_ ~ .pop-window .pop-window-view iframe {
   background: rgba(255, 255, 255, 0.9) !important;
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) var(--blur-px);
+  -webkit-backdrop-filter: saturate(180%) var(--blur-px);
 }
 /*彈出視窗輸入框圓角*/
 ._lch_ ~ .pop-window .plurkForm.mini-mode .input_holder,
@@ -123,15 +144,21 @@ html,
 }
 
 /*   河道調整   */
-
+#timeline_cnt {
+  top: -20px;
+  height: calc(100% + 70px) !important;
+}
 #timeline_holder {
   height: calc(100vh - 160px) !important;
   background: none;
+  font-size: var(--plurk_font_size);
 }
 /*時間標籤*/
 .bottom_start {
   position: absolute;
   height: 18px;
+  background: black !important;
+  color: white !important;
 }
 #bottom_line {
   display: none !important;
@@ -144,6 +171,10 @@ html,
   border-radius: 12px;
   background-color: #ff574d;
 }
+/* 通知器往下調整 */
+.timeline_control {
+  margin-top: -13px;
+}
 /*右下浮動發噗時間*/
 #time_show {
   top: auto !important;
@@ -152,8 +183,8 @@ html,
   left: auto !important;
   padding: 10px !important;
   background-color: rgba(0, 0, 0, 0.6) !important;
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) var(--blur-px);
+  -webkit-backdrop-filter: saturate(180%) var(--blur-px);
 }
 #time_show span {
   color: #fff !important;
@@ -176,27 +207,26 @@ html,
 /*噗本體*/
 .cboxAnchor:not(.response) .plurk_cnt {
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.8) !important;
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  background: var(--plurk_bg_color) !important;
+  backdrop-filter: saturate(180%) var(--blur-px);
+  -webkit-backdrop-filter: saturate(180%) var(--blur-px);
 }
 
 /*噗文寬度*/
 .plurk.cboxAnchor:not(.response) {
-  max-width: 430px;
+  max-width: var(--plurk_max_width);
 }
 /*噗文邊界*/
 .cboxAnchor:not(.response) .tr_cnt {
   display: block;
-  margin: 7px;
-  max-width: 430px;
+  margin: 5px;
 }
 /*噗文暱稱*/
 .cboxAnchor:not(.response) .td_qual {
   display: inline-block;
   position: relative;
-  top: 2px;
-  left: 35px;
+  top: 0px;
+  left: 30px;
 }
 .name {
   font-size: 1.1em;
@@ -207,8 +237,8 @@ html,
 /*噗文大頭貼*/
 .td_img {
   position: absolute;
-  top: 10px;
-  left: 13px;
+  top: 6px;
+  left: 10px;
   z-index: 100;
 }
 .p_img img {
@@ -220,13 +250,16 @@ html,
 .qualifier {
   padding: 0 3px 0 3px;
 }
-/*拉寬噗文*/
+/*噗文與頂部邊界*/
 .cboxAnchor:not(.response) .td_cnt {
   display: inline-block;
-  margin-top: 35px;
+  margin-top: 25px;
 }
 .cboxAnchor:not(.response) .text_holder {
   width: 100%;
+}
+.cboxAnchor:not(.response):not(.display) .text_holder {
+  max-height: var(--plurk_max_height) !important;
 }
 /*選中的噗文*/
 .cboxAnchor:not(.response).display .plurk_cnt {
@@ -261,9 +294,9 @@ html,
   border: none;
 }
 #form_holder {
-  background: rgba(255, 255, 255, 0.8) !important;
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  background: var(--plurk_bg_color) !important;
+  backdrop-filter: saturate(180%) var(--blur-px);
+  -webkit-backdrop-filter: saturate(180%) var(--blur-px);
   border-radius: 0 0 7px 7px;
 }
 .icons_holder .pif-emoticon:after {
@@ -358,8 +391,8 @@ html,
   border-radius: 30px;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.8);
   background-color: rgba(255, 255, 255, 0.6);
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) var(--blur-px);
+  -webkit-backdrop-filter: saturate(180%) var(--blur-px);
   z-index: 900;
 }
 /*發文面板尺寸控制*/
@@ -440,8 +473,8 @@ html,
   transition: max-height 1s, transform 1s, background 0.5s, border-radius 0.3s 1s;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) var(--blur-px);
+  -webkit-backdrop-filter: saturate(180%) var(--blur-px);
   transform: translate(230px, 0);
   z-index: 900;
 }
@@ -520,8 +553,8 @@ html,
   transition: max-height 1s, background 0s, transform 1s, border-radius 0.3s 1s;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) var(--blur-px);
+  -webkit-backdrop-filter: saturate(180%) var(--blur-px);
   transform: translate(540px, 0);
   z-index: 900;
 }
@@ -566,6 +599,11 @@ html,
   font-family: nixie;
   src: url('https://chiaki.uk/assets/AkiNixieNumber-Regular.woff2') format('woff2'),
     url('https://chiaki.uk/assets/AkiNixieNumber-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: nixie2;
+  src: url('https://chiaki.uk/assets/AkiNixieNumber-karma.woff2') format('woff2'),
+    url('https://chiaki.uk/assets/AkiNixieNumber-karma.woff') format('woff');
 }
 .karma_hover {
   display: flex;
@@ -629,3 +667,8 @@ html,
 #footer .copyright {
   display: none;
 }
+
+/* ---------------------------
+  主CSS結束
+  產生器及其他CSS請插入在下方
+-----------------------------*/
