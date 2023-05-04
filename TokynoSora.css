@@ -18,9 +18,9 @@ html,
   /*模糊程度*/
   --blur-px: blur(20px);
   /*top_bar文字顏色*/
-  --top_bar_color: #fff;
+  --top_bar_color: rgba(255, 255, 255, 1);
   /*top_bar背景色*/
-  --top_bar_bg_color: transparent;
+  --top_bar_bg_color: rgba(255, 255, 255, 0);
 }
 
 /*   整體控制   */
