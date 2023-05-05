@@ -1,5 +1,5 @@
 /* 
-   Tokyono-Sora v1.2.0
+   Tokyono-Sora v1.2.1
    Design by Chiaki.C https://plurk.com/akira02
    https://github.com/akira02/Tokyono-Sora/
 */
@@ -153,6 +153,9 @@ html,
   height: calc(100vh - 150px) !important;
   background: none;
   font-size: var(--plurk_font_size);
+}
+._lc_#layout_content {
+  min-height: 100vh;
 }
 /*時間標籤*/
 .bottom_start {
