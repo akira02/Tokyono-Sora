@@ -193,6 +193,7 @@ html,
   right: 1%;
   bottom: 5%;
   left: auto !important;
+  z-index: 600;
   padding: 10px !important;
   background-color: rgba(0, 0, 0, 0.6) !important;
   backdrop-filter: saturate(180%) var(--blur-px);

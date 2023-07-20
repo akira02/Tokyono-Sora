@@ -1,4 +1,4 @@
-/* 自用額外設定 */
+/* 自用額外設定範例 */
 
 /* 換滑鼠游標 */
 * {
@@ -72,11 +72,12 @@
   backdrop-filter: none !important;
 }
 
-/* 白色模糊背景改為固定圖片 */
+/* 白色模糊背景改為固定圖片（建議用產生器） */
 .cboxAnchor:not(.response) .plurk_cnt,
 #form_holder,
 ._lch_ ~ .pop-window .pop-window-content,
 ._lch_ ~ .pop-window .pop-window-view iframe {
+  /*在下面插入預先產生的模糊背景圖連結*/
   background-image: url(https://chiaki.uk/Tokyono-Sora/img/default-light.jpg) !important;
   background-position: center !important;
   background-size: cover !important;
