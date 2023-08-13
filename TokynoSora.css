@@ -71,7 +71,7 @@ body::-webkit-scrollbar,
   width: 0px;
 }
 :is(url({)),
-#layout_body::-webkit-scrollbar,
+*::-webkit-scrollbar,
 body:has(#bookmark_holder)::-webkit-scrollbar,
 :is(url(})) {
   width: 5px;
@@ -179,7 +179,7 @@ body:is(url(})) {
 /*噗文展開時停用左右捲動*/
 #timeline_holder:has(.plurk_box.link_extend) {
   pointer-events: none;
-  z-index: 1100;
+  z-index: 1200;
 }
 #timeline_cnt:has(.cboxAnchor.link_extend:hover) {
   z-index: 1200;
