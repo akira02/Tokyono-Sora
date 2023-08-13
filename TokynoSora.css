@@ -229,6 +229,7 @@ body:is(url(})) {
   position: fixed;
   bottom: 140px;
   right: 20px;
+  pointer-events: none;
 }
 
 /*   噗調整   */
@@ -624,10 +625,11 @@ body:is(url(})) {
 .dash-segment-stats .segment-content {
   height: 100px;
 }
-#dash-stats-table {
+#plurk-dashboard #dash-stats-table {
   position: absolute;
   right: 0px;
   width: 400px !important;
+  overflow: auto;
 }
 #dash-stats h2 {
   display: none;
@@ -662,13 +664,37 @@ body:is(url(})) {
   margin: 0;
   left: 7px;
   text-indent: -300px;
-  pointer-events: none;
 }
 #karma_holder {
-  display: inline-block;
-  position: relative;
+  display: contents;
   text-indent: 0px;
-  left: 0px;
+}
+/*karma箭頭*/
+#karma_arrow {
+  text-indent: 0px;
+  opacity: 0;
+  transition: opacity 0.5s 0.5s;
+}
+.dash-group-right:hover #karma_arrow {
+  opacity: 1;
+}
+#karma_arrow.pif-arrow-up {
+  text-shadow: 0px 0px 6px rgba(121, 219, 34, 1);
+}
+#karma_arrow.pif-arrow-down {
+  text-shadow: 0px 0px 6px rgba(240, 87, 44, 1);
+}
+
+/*Karma提示窗*/
+:is(url({)),
+.karma_tooltip,
+:is(url(})) {
+  pointer-events: none;
+}
+:is(url({)),
+.karma_tooltip a,
+:is(url(})) {
+  display: none;
 }
 #karma {
   position: relative;
@@ -676,11 +702,10 @@ body:is(url(})) {
   text-align: right;
   font-family: nixie;
   font-size: 35px;
-  width: 3.5em;
   top: -10px;
   left: -5px;
   padding: 0.2em;
-  padding-bottom: 0.1em;
+  padding-bottom: 0.4em;
   color: #ff9b28;
   text-shadow: 0px 0px 6px rgba(255, 65, 0, 0.7), 0px 0px 20px #ff8000,
     0px 0px 10px rgb(118, 18, 3) !important;
@@ -689,6 +714,10 @@ body:is(url(})) {
 .dash-stats-karma .help {
   display: none;
 }
+.karma-tooltip {
+  pointer-events: none;
+}
+
 /*背景燈絲*/
 #karma::after {
   position: absolute;
