@@ -1,5 +1,5 @@
 /* 
-   Tokyono-Sora v1.2.2
+   Tokyono-Sora v1.3.0
    Design by Chiaki.C https://plurk.com/akira02
    https://github.com/akira02/Tokyono-Sora/
 */
@@ -14,13 +14,13 @@ html,
   /*噗文字體大小*/
   --plurk_font_size: 14px;
   /*噗文背景色*/
-  --plurk_bg_color: rgba(255, 255, 255, 0.8);
+  --plurk_bg_color: rgba(251, 251, 253, .8);
   /*模糊程度*/
   --blur-px: blur(20px);
   /*top_bar文字顏色*/
   --top_bar_color: rgba(255, 255, 255, 1);
   /*top_bar背景色*/
-  --top_bar_bg_color: rgba(255, 255, 255, 0);
+  --top_bar_bg_color: rgba(251, 251, 253, 0);
 }
 
 /*   整體控制   */
@@ -43,6 +43,11 @@ html,
   min-height: 100vh;
 }
 
+/*修正過高的噗載入回應錯位*/
+._lc_#layout_content:has(#form_holder .loading:not(.hide)) {
+  height: 150vh;
+}
+
 /*top_bar背景及文字顏色*/
 :is(url({)),
 #top_bar,
@@ -61,24 +66,29 @@ html,
 
 /*捲軸調整*/
 :is(url({)),
-._lch_ ::-webkit-scrollbar,
+body::-webkit-scrollbar,
+:is(url(})) {
+  width: 0px;
+}
+:is(url({)),
+#layout_body::-webkit-scrollbar,
+body:has(#bookmark_holder)::-webkit-scrollbar,
 :is(url(})) {
   width: 5px;
 }
 :is(url({)),
-._lch_ ::-webkit-scrollbar-track,
-:is(url(})) {
+*::-webkit-scrollbar-track,
+body:is(url(})) {
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
 :is(url({)),
-._lch_ ::-webkit-scrollbar-thumb,
-:is(url(})) {
+*::-webkit-scrollbar-thumb,
+body:is(url(})) {
   -webkit-border-radius: 4px;
   border-radius: 4px;
   background: #9c9c9c;
 }
-
 ._lch_ ~ .pop-window {
   overflow: hidden;
 }
@@ -156,6 +166,7 @@ html,
 /*   河道調整   */
 #timeline_cnt {
   height: calc(100% + 70px) !important;
+  z-index: 1000;
 }
 .block_cnt {
   top: -20px;
@@ -165,6 +176,15 @@ html,
   background: none;
   font-size: var(--plurk_font_size);
 }
+/*噗文展開時停用左右捲動*/
+#timeline_holder:has(.plurk_box.link_extend) {
+  pointer-events: none;
+  z-index: 1100;
+}
+#timeline_cnt:has(.cboxAnchor.link_extend:hover) {
+  z-index: 1200;
+}
+
 /*時間標籤*/
 .bottom_start {
   position: absolute;
@@ -183,17 +203,13 @@ html,
   border-radius: 12px;
   background-color: #ff574d;
 }
-/* 通知器往下調整 */
-.timeline_control {
-  margin-top: -13px;
-}
 /*右下浮動發噗時間*/
 #time_show {
   top: auto !important;
   right: 1%;
   bottom: 5%;
   left: auto !important;
-  z-index: 600;
+  z-index: 1001;
   padding: 10px !important;
   background-color: rgba(0, 0, 0, 0.6) !important;
   backdrop-filter: saturate(180%) var(--blur-px);
@@ -277,6 +293,9 @@ html,
   max-height: var(--plurk_max_height) !important;
 }
 /*選中的噗文*/
+.block_cnt .cboxAnchor:not(.response).link_extend {
+  z-index: 2000;
+}
 .block_cnt .cboxAnchor:not(.response).display .plurk_cnt {
   min-width: 430px;
 }
@@ -396,9 +415,13 @@ html,
 }
 
 /*發文面板*/
-.dash-group-form {
-  position: fixed !important;
-  bottom: 35px !important;
+#dashboard_holder {
+  padding: 0;
+  padding-top: 75px;
+}
+#plurk-dashboard .dash-group-form {
+  position: absolute;
+  bottom: 0px;
   left: 50%;
   transform: translate(-50%, 0);
   width: calc(100vw - 120px) !important;
@@ -408,7 +431,7 @@ html,
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: saturate(180%) var(--blur-px);
   -webkit-backdrop-filter: saturate(180%) var(--blur-px);
-  z-index: 900;
+  z-index: 1100;
 }
 /*發文面板尺寸控制*/
 #plurk-dashboard .dash-group-form .segment-content {
@@ -491,7 +514,7 @@ html,
   backdrop-filter: saturate(180%) var(--blur-px);
   -webkit-backdrop-filter: saturate(180%) var(--blur-px);
   transform: translate(230px, 0);
-  z-index: 900;
+  z-index: 1300;
 }
 #dash-profile {
   margin-left: 3px;
@@ -583,7 +606,7 @@ html,
   backdrop-filter: saturate(180%) var(--blur-px);
   -webkit-backdrop-filter: saturate(180%) var(--blur-px);
   transform: translate(540px, 0);
-  z-index: 900;
+  z-index: 1300;
 }
 .dash-group-right:hover {
   max-height: 100vh;
