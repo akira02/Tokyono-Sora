@@ -647,6 +647,21 @@ body:is(url(})) {
 .dash-stats-karma {
   width: auto !important;
 }
+/*在展開前避免出現karma資訊*/
+.dash-stats-karma:before {
+  content: '';
+  position: absolute;
+  width: 250px;
+  height: 100px;
+  left: 0;
+  z-index: 1;
+  top: -10px;
+  transition: width 0s 0.5s;
+}
+.dash-group-right:hover .dash-stats-karma:before {
+  width: 0px;
+}
+
 @font-face {
   font-family: nixie;
   src: url("https://chiaki.uk/assets/AkiNixieNumber-Regular.woff2")
