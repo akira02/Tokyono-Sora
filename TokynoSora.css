@@ -210,7 +210,7 @@ body:is(url(})) {
 }
 /*右邊捲動箭頭*/
 .browse_button {
-  z-index: 800;
+  z-index: 1100;
 }
 /*調整噗浪獸位置*/
 #dynamic_logo {
@@ -589,7 +589,10 @@ body:is(url(})) {
   transform: translate(540px, 0);
   z-index: 1300;
 }
-.dash-group-right:hover {
+:is(url({)),
+.dash-group-right:hover,
+#layout_body:has(.karma_tooltip:hover) .dash-group-right,
+:is(url(})) {
   max-height: 100vh;
   border-radius: 7px;
   transition: max-height 1s, background 0s, transform 1s, border-radius 0.3s;
@@ -668,7 +671,10 @@ body:is(url(})) {
   opacity: 0;
   transition: opacity 0.5s 0.5s;
 }
-.dash-group-right:hover #karma_arrow {
+:is(url({)),
+.dash-group-right:hover #karma_arrow,
+#layout_body:has(.karma_tooltip:hover) .dash-group-right #karma_arrow,
+:is(url(})) {
   opacity: 1;
 }
 #karma_arrow.pif-arrow-up {
@@ -676,18 +682,6 @@ body:is(url(})) {
 }
 #karma_arrow.pif-arrow-down {
   text-shadow: 0px 0px 6px rgba(240, 87, 44, 1);
-}
-
-/*Karma提示窗*/
-:is(url({)),
-.karma_tooltip,
-:is(url(})) {
-  pointer-events: none;
-}
-:is(url({)),
-.karma_tooltip a,
-:is(url(})) {
-  display: none;
 }
 #karma {
   position: relative;
@@ -722,7 +716,10 @@ body:is(url(})) {
 .dash-stats-karma {
   margin: 0 !important;
 }
-.dash-group-right:hover #karma {
+:is(url({)),
+.dash-group-right:hover #karma,
+#layout_body:has(.karma_tooltip:hover) .dash-group-right #karma,
+:is(url(})) {
   transform: translate(20px, 20px);
   font-size: 50px;
 }
