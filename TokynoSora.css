@@ -1,5 +1,5 @@
 /* 
-   Tokyono-Sora v1.3.0
+   Tokyono-Sora v1.3.1
    Design by Chiaki.C https://plurk.com/akira02
    https://github.com/akira02/Tokyono-Sora/
 */
@@ -7,20 +7,24 @@
 :is(url({)),
 html,
 :is(url(})) {
-  /*噗文高度*/
-  --plurk_max_height: calc(8vh - 30px);
-  /*噗文寬度*/
-  --plurk_max_width: 350px;
+  /*主題色*/
+  --theme-main-color: rgba(255, 87, 77, 1);
+  /*主題色(文字)*/
+  --theme-sub-color: rgba(255, 255, 255, 1);
   /*噗文字體大小*/
-  --plurk_font_size: 14px;
+  --plurk-font-size: 14px;
   /*噗文背景色*/
-  --plurk_bg_color: rgba(251, 251, 253, 0.8);
+  --plurk-bg-color: rgba(251, 251, 253, 0.8);
   /*模糊程度*/
   --blur-px: blur(20px);
   /*top_bar文字顏色*/
-  --top_bar_color: rgba(255, 255, 255, 1);
+  --top-bar-color: rgba(255, 255, 255, 1);
   /*top_bar背景色*/
-  --top_bar_bg_color: rgba(251, 251, 253, 0);
+  --top-bar-color: rgba(251, 251, 253, 0);
+  /*噗文高度*/
+  --plurk-max-height: calc(8vh - 30px);
+  /*噗文寬度*/
+  --plurk-max-width: 350px;
 }
 
 /*   整體控制   */
@@ -31,13 +35,11 @@ html,
   font-family: 'M 翔鶴黑體 TC', 'PingFang TC', 'LiHei Pro', 'Heiti TC', 'Source Han Sans TC', 'Noto Sans TC',
     'Hiragino Sans', 'Century Gothic', 'Microsoft Jhenghei', '微軟正黑體', sans-serif !important;
 }
-
 :is(url({)),
 .text_holder,
 :is(url(})) {
   line-height: 1.5em;
 }
-
 ._lc_#layout_content {
   min-height: 100vh;
 }
@@ -52,15 +54,15 @@ html,
 #top_bar,
 #top_bar .bar-icon,
 :is(url(})) {
-  color: var(--top_bar_color);
+  color: var(--top-bar-color);
 }
 #top_bar #top-bar-main .tab.current:after {
-  background: var(--top_bar_color);
+  background: var(--top-bar-color);
 }
 :is(url({)),
 .bar-color,
 :is(url(})) {
-  background: var(--top_bar_bg_color);
+  background: var(--top-bar-color);
 }
 
 /*捲軸調整*/
@@ -170,7 +172,18 @@ body:is(url(})) {
 #timeline_holder {
   height: calc(100vh - 150px) !important;
   background: none;
-  font-size: var(--plurk_font_size);
+  font-size: var(--plurk-font-size);
+}
+/*河道前後箭號*/
+.browse_button .cmp_arrow_right, .browse_button .cmp_arrow_left {
+  color: var(--theme-main-color);
+}
+.browse_button .cmp_back_to_today {
+  color: var(--theme-sub-color);
+  background: var(--theme-main-color);
+}
+.cmp_back_to_today:before {
+  color: var(--theme-main-color);
 }
 
 /*時間標籤*/
@@ -189,7 +202,18 @@ body:is(url(})) {
 }
 .unread_generic {
   border-radius: 12px;
-  background-color: #ff574d;
+  background-color: var(--theme-main-color);
+}
+#filter_tab a.filter_selected {
+  color: var(--theme-sub-color);
+  background: var(--theme-main-color);
+}
+#updater, #updater .item, #updater .item a {
+  color: var(--theme-main-color);
+}
+#updater .item a:hover {
+  color: var(--theme-sub-color);
+  background: var(--theme-main-color);
 }
 /*右下浮動發噗時間*/
 #time_show {
@@ -225,7 +249,7 @@ body:is(url(})) {
 /*噗本體*/
 .block_cnt .cboxAnchor:not(.response) .plurk_cnt {
   border-radius: 8px;
-  background: var(--plurk_bg_color) !important;
+  background: var(--plurk-bg-color) !important;
   backdrop-filter: saturate(180%) var(--blur-px);
   -webkit-backdrop-filter: saturate(180%) var(--blur-px);
 }
@@ -238,7 +262,7 @@ body:is(url(})) {
 
 /*噗文寬度*/
 .block_cnt .plurk.cboxAnchor:not(.response):not(.bigplurk) {
-  max-width: var(--plurk_max_width);
+  max-width: var(--plurk-max-width);
 }
 /*噗文邊界*/
 .block_cnt .cboxAnchor:not(.response) .tr_cnt {
@@ -283,7 +307,7 @@ body:is(url(})) {
   width: 100%;
 }
 .block_cnt .cboxAnchor:not(.response):not(.display):not(.bigplurk) .text_holder {
-  max-height: var(--plurk_max_height) !important;
+  max-height: var(--plurk-max-height) !important;
 }
 /*選中的噗文*/
 .block_cnt .cboxAnchor:not(.response).link_extend {
@@ -321,7 +345,7 @@ body:is(url(})) {
   border: none;
 }
 #form_holder {
-  background: var(--plurk_bg_color) !important;
+  background: var(--plurk-bg-color) !important;
   backdrop-filter: saturate(180%) var(--blur-px);
   -webkit-backdrop-filter: saturate(180%) var(--blur-px);
   border-radius: 0 0 7px 7px;
@@ -363,7 +387,7 @@ body:is(url(})) {
 /*回應計數(未讀)*/
 .new .response_count {
   position: relative !important;
-  background-color: #ff574d;
+  background-color: var(--theme-main-color);
   top: -13px;
   left: -15px;
   box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
@@ -473,6 +497,9 @@ body:is(url(})) {
   padding: 0 15px 0 15px;
   line-height: 35px;
   margin: 0;
+}
+.submit_img_color {
+  background: var(--theme-main-color);
 }
 /*發文設定提示字*/
 #main_poster .plurk_to {
