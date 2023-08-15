@@ -277,7 +277,10 @@ body:is(url(})) {
 }
 
 /*噗文展開時覆蓋其他物件*/
-#timeline_holder:has(.plurk_box.link_extend),
+#timeline_holder:has(.link_extend.plurk_box) {
+  z-index: 1400;
+}
+/*噗文點開時覆蓋其他物件*/
 #timeline_cnt:has(.cboxAnchor.link_extend:hover) {
   z-index: 1200;
 }

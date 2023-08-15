@@ -5,13 +5,9 @@
   cursor: url("https://chiaki.uk/Zero-Memo/img/arrow.gif"), auto;
 }
 
-/* 換噗浪獸 */
-
-#dynamic_logo img {
-  display: none;
-}
+/* 噗寶 */
 /*圖片*/
-#dynamic_logo:before {
+._lch_:before {
   background-image: url("https://images.plurk.com/3eb4ioHZAN4uo4O4pey0FX.png");
   /* 圖片尺寸 */
   background-size: 25%;
@@ -26,7 +22,7 @@
   position: fixed;
 }
 /*簽名*/
-#dynamic_logo:after {
+._lch_:after {
   background-image: url("https://raw.githubusercontent.com/akira02/akira02.github.io/master/img/signv2_animated.svg");
   /* 圖片尺寸 */
   background-size: contain;
