@@ -80,6 +80,15 @@
   content: "大小姐♂";
 }
 
+/* 透明topbar */
+:is(url({)),
+.bar-color,
+:is(url(})) {
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
 /* 以上傳圖片覆蓋掉噗浪原本的背景圖 */
 ._lch_ {
   background-image: url("https://images.plurk.com/YDabJWRfA3FSlPsxTveIS.jpg") !important;
