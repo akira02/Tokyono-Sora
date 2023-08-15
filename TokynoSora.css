@@ -243,7 +243,7 @@ body:is(url(})) {
   right: 1%;
   bottom: 5%;
   left: auto !important;
-  z-index: 1001;
+  z-index: 1200;
   padding: 10px !important;
   background-color: var(--dashboard-bg-color) !important;
   backdrop-filter: saturate(var(--blur-saturate)) blur(var(--blur-px));
