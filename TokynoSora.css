@@ -293,7 +293,7 @@ body:is(url(})) {
 }
 /*噗文工具列*/
 .manager > a {
-  color: rgba(172, 172, 172, 1);
+  color: #AFB8CC;
   display: inline-flex;
   align-items: center;
 }
@@ -358,6 +358,7 @@ body:is(url(})) {
 /*展開噗文*/
 .block_cnt .cboxAnchor:not(.response).plurk_box .plurk_cnt {
   border-radius: 7px 7px 0 0;
+  box-shadow: 0 0px 35px rgba(29, 29, 31, 0.4);
 }
 .plurk_editor_form {
   order: 4;
@@ -377,8 +378,11 @@ body:is(url(})) {
 #form_holder {
   background: var(--plurk-bg-color) !important;
   backdrop-filter: saturate(var(--blur-saturate)) blur(var(--blur-px));
+  box-shadow: 0px 30px 35px rgba(29, 29, 31, 0.4);
+  clip-path: inset(0px -50px -50px -50px);
   -webkit-backdrop-filter: saturate(var(--blur-saturate)) blur(var(--blur-px));
   border-radius: 0 0 7px 7px;
+  margin-top: -1px;
 }
 .icons_holder .pif-emoticon:after {
   display: none;
