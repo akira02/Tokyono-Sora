@@ -43,6 +43,12 @@
 }
 
 /* 改成世界線變動率風格卡馬值 */
+@font-face {
+  font-family: nixie2;
+  src: url("https://chiaki.uk/assets/AkiNixieNumber-karma.woff2")
+      format("woff2"),
+    url("https://chiaki.uk/assets/AkiNixieNumber-karma.woff") format("woff");
+}
 #karma::before {
   content: "1·0";
 }
@@ -57,7 +63,8 @@
 }
 :is(url({)),
 .dash-group-right:hover #karma,
-#layout_body:has(.pop-view:hover) .dash-group-right #karma,
+#layout_body:has(.karma_tooltip:hover) .dash-group-right #karma,
+#layout_body:has(.friend-fan-editor-popview:hover) .dash-group-right #karma,
 :is(url(})) {
   transform: translate(5px, 20px);
 }

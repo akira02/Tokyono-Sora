@@ -7,23 +7,25 @@
 :is(url({)),
 html,
 :is(url(})) {
-  /*主題色*/
+  /* 主題色 */
   --theme-main-color: rgba(255, 87, 77, 1);
-  /*主題色(文字)*/
+  /* 副主題色(文字顏色) */
   --theme-sub-color: rgba(255, 255, 255, 1);
-  /*噗文字體大小*/
+  /* 噗文字體大小 */
   --plurk-font-size: 14px;
-  /*噗文背景色*/
+  /* 噗文背景色 */
   --plurk-bg-color: rgba(251, 251, 253, 0.8);
-  /*模糊程度*/
+  /* 自介欄位背景色 */
+  --dashboard-bg-color: rgba(29, 29, 31, 0.72);
+  /* top_bar文字顏色 */
+  --top-bar-text-color: rgba(255, 255, 255, 1);
+  /* top_bar背景色 */
+  --top-bar-bg-color: rgba(29, 29, 31, 0.72);
+  /* 模糊程度 */
   --blur-px: blur(20px);
-  /*top_bar文字顏色*/
-  --top-bar-color: rgba(255, 255, 255, 1);
-  /*top_bar背景色*/
-  --top-bar-color: rgba(251, 251, 253, 0);
-  /*噗文高度*/
+  /* 噗文高度 */
   --plurk-max-height: calc(8vh - 30px);
-  /*噗文寬度*/
+  /* 噗文寬度 */
   --plurk-max-width: 350px;
 }
 
@@ -32,8 +34,9 @@ html,
 body,
 html,
 :is(url(})) {
-  font-family: 'M 翔鶴黑體 TC', 'PingFang TC', 'LiHei Pro', 'Heiti TC', 'Source Han Sans TC', 'Noto Sans TC',
-    'Hiragino Sans', 'Century Gothic', 'Microsoft Jhenghei', '微軟正黑體', sans-serif !important;
+  font-family: "M 翔鶴黑體 TC", "PingFang TC", "LiHei Pro", "Heiti TC",
+    "Source Han Sans TC", "Noto Sans TC", "Hiragino Sans", "Century Gothic",
+    "Microsoft Jhenghei", "微軟正黑體", sans-serif !important;
 }
 :is(url({)),
 .text_holder,
@@ -54,15 +57,24 @@ html,
 #top_bar,
 #top_bar .bar-icon,
 :is(url(})) {
-  color: var(--top-bar-color);
-}
-#top_bar #top-bar-main .tab.current:after {
-  background: var(--top-bar-color);
+  color: var(--top-bar-text-color);
 }
 :is(url({)),
 .bar-color,
 :is(url(})) {
-  background: var(--top-bar-color);
+  background: var(--top-bar-bg-color);
+  backdrop-filter: saturate(180%) var(--blur-px);
+  -webkit-backdrop-filter: saturate(180%) var(--blur-px);
+}
+:is(url({)),
+#top_bar #top-bar-main .tab.current:after,
+:is(url(})) {
+  background: rgba(208, 208, 200, 0.7);
+  left: calc(50% - 1.5px);
+  top: 32px;
+  width: 3px;
+  height: 3px;
+  border-radius: 5px;
 }
 
 /*捲軸調整*/
@@ -96,7 +108,8 @@ body:is(url(})) {
 
 /*載入動畫*/
 .loading > img {
-  background: url(https://raw.githubusercontent.com/akira02/Tokyono-Sora/main/loading.svg) no-repeat;
+  background: url(https://raw.githubusercontent.com/akira02/Tokyono-Sora/main/loading.svg)
+    no-repeat;
   width: 90px;
   height: 90px;
   background-size: 90px;
@@ -104,7 +117,8 @@ body:is(url(})) {
   margin-top: 17px;
 }
 .loading-div {
-  background: url(https://raw.githubusercontent.com/akira02/Tokyono-Sora/main/loading.svg) no-repeat;
+  background: url(https://raw.githubusercontent.com/akira02/Tokyono-Sora/main/loading.svg)
+    no-repeat;
   background-size: 120px;
   width: 120px;
   height: 120px;
@@ -117,10 +131,11 @@ body:is(url(})) {
   display: none;
 }
 ._lch_ ~ .pop-window .loading::after {
-  content: ' ';
+  content: " ";
   display: block;
   position: relative;
-  background: url(https://raw.githubusercontent.com/akira02/Tokyono-Sora/main/loading.svg) no-repeat;
+  background: url(https://raw.githubusercontent.com/akira02/Tokyono-Sora/main/loading.svg)
+    no-repeat;
   background-size: 90px;
   width: 90px;
   height: 90px;
@@ -175,7 +190,8 @@ body:is(url(})) {
   font-size: var(--plurk-font-size);
 }
 /*河道前後箭號*/
-.browse_button .cmp_arrow_right, .browse_button .cmp_arrow_left {
+.browse_button .cmp_arrow_right,
+.browse_button .cmp_arrow_left {
   color: var(--theme-main-color);
 }
 .browse_button .cmp_back_to_today {
@@ -208,8 +224,13 @@ body:is(url(})) {
   color: var(--theme-sub-color);
   background: var(--theme-main-color);
 }
-#updater, #updater .item, #updater .item a {
+#updater,
+#updater .item,
+#updater .item a {
   color: var(--theme-main-color);
+}
+#updater .item a {
+  background: var(--theme-sub-color);
 }
 #updater .item a:hover {
   color: var(--theme-sub-color);
@@ -223,7 +244,7 @@ body:is(url(})) {
   left: auto !important;
   z-index: 1001;
   padding: 10px !important;
-  background-color: rgba(0, 0, 0, 0.6) !important;
+  background-color: var(--dashboard-bg-color) !important;
   backdrop-filter: saturate(180%) var(--blur-px);
   -webkit-backdrop-filter: saturate(180%) var(--blur-px);
 }
@@ -279,8 +300,8 @@ body:is(url(})) {
 .name {
   font-size: 1.1em;
   font-weight: 800;
-  text-shadow: #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px,
-    #fff 0px 0px 1px;
+  text-shadow: #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px,
+    #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px;
 }
 /*噗文大頭貼*/
 .td_img {
@@ -306,7 +327,9 @@ body:is(url(})) {
 .block_cnt .cboxAnchor:not(.response) .text_holder {
   width: 100%;
 }
-.block_cnt .cboxAnchor:not(.response):not(.display):not(.bigplurk) .text_holder {
+.block_cnt
+  .cboxAnchor:not(.response):not(.display):not(.bigplurk)
+  .text_holder {
   max-height: var(--plurk-max-height) !important;
 }
 /*選中的噗文*/
@@ -528,9 +551,11 @@ body:is(url(})) {
   background: none;
   border-radius: 150px;
   max-height: 115px;
-  transition: max-height 1s, transform 1s, background 0.5s, border-radius 0.3s 1s;
+  transition: max-height 1s, transform 1s, background 0.5s,
+    border-radius 0.3s 1s;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.6);
+  color: var(--theme-sub-color);
+  background-color: var(--dashboard-bg-color);
   backdrop-filter: saturate(180%) var(--blur-px);
   -webkit-backdrop-filter: saturate(180%) var(--blur-px);
   transform: translate(230px, 0);
@@ -554,7 +579,7 @@ body:is(url(})) {
 }
 /*自介連結顏色*/
 #plurk-dashboard #about_me a {
-  color: #ff574d !important;
+  color: var(--theme-main-color) !important;
 }
 /*噗幣位置*/
 #plurk-dashboard .profile-icons {
@@ -571,13 +596,25 @@ body:is(url(})) {
   display: flex;
 }
 #plurk-dashboard .dash-segment-profile #dash-profile .profile-info .edit-alias,
-#plurk-dashboard .dash-segment-profile #dash-profile .profile-info .remove-alias {
+#plurk-dashboard
+  .dash-segment-profile
+  #dash-profile
+  .profile-info
+  .remove-alias {
   max-width: 0px;
   transition: all 0.3s;
   margin-right: 0px;
 }
-#plurk-dashboard .dash-segment-profile #dash-profile:hover .profile-info .edit-alias,
-#plurk-dashboard .dash-segment-profile #dash-profile:hover .profile-info .remove-alias {
+#plurk-dashboard
+  .dash-segment-profile
+  #dash-profile:hover
+  .profile-info
+  .edit-alias,
+#plurk-dashboard
+  .dash-segment-profile
+  #dash-profile:hover
+  .profile-info
+  .remove-alias {
   max-width: 10px;
   display: block;
   margin-right: 8px;
@@ -585,7 +622,7 @@ body:is(url(})) {
 #dash-profile .profile-info #alias {
   transition: all 0.5s;
 }
-#dash-profile .profile-info #alias[contenteditable='true'] {
+#dash-profile .profile-info #alias[contenteditable="true"] {
   color: black;
   background-color: white;
   padding: 0 8px;
@@ -648,6 +685,9 @@ body:is(url(})) {
 #plurk-dashboard .dash-segment #dash-stats table td {
   color: white;
 }
+#plurk-dashboard a {
+  color: var(--theme-main-color);
+}
 /*按鈕*/
 #plurk-dashboard a.friend_man {
   border-radius: 15px;
@@ -660,7 +700,7 @@ body:is(url(})) {
 }
 /*在展開前避免出現karma資訊*/
 .dash-stats-karma:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 250px;
   height: 100px;
@@ -675,14 +715,11 @@ body:is(url(})) {
 
 @font-face {
   font-family: nixie;
-  src: url('https://chiaki.uk/assets/AkiNixieNumber-Regular.woff2') format('woff2'),
-    url('https://chiaki.uk/assets/AkiNixieNumber-Regular.woff') format('woff');
+  src: url("https://chiaki.uk/assets/AkiNixieNumber-Regular.woff2")
+      format("woff2"),
+    url("https://chiaki.uk/assets/AkiNixieNumber-Regular.woff") format("woff");
 }
-@font-face {
-  font-family: nixie2;
-  src: url('https://chiaki.uk/assets/AkiNixieNumber-karma.woff2') format('woff2'),
-    url('https://chiaki.uk/assets/AkiNixieNumber-karma.woff') format('woff');
-}
+
 .karma_hover {
   display: flex;
   margin: 0;
@@ -702,7 +739,9 @@ body:is(url(})) {
 :is(url({)),
 .dash-group-right:hover #karma_arrow,
 #layout_body:has(.karma_tooltip:hover) .dash-group-right #karma_arrow,
-#layout_body:has(.friend-fan-editor-popview:hover) .dash-group-right #karma_arrow,
+#layout_body:has(.friend-fan-editor-popview:hover)
+  .dash-group-right
+  #karma_arrow,
 :is(url(})) {
   opacity: 1;
 }
@@ -723,7 +762,8 @@ body:is(url(})) {
   padding: 0.2em;
   padding-bottom: 0.4em;
   color: #ff9b28;
-  text-shadow: 0px 0px 6px rgba(255, 65, 0, 0.7), 0px 0px 20px #ff8000, 0px 0px 10px rgb(118, 18, 3) !important;
+  text-shadow: 0px 0px 6px rgba(255, 65, 0, 0.7), 0px 0px 20px #ff8000,
+    0px 0px 10px rgb(118, 18, 3) !important;
   transition: transform 1s, font-size 1s;
 }
 .dash-stats-karma .help {
@@ -740,7 +780,7 @@ body:is(url(})) {
   left: 0.2em;
   opacity: 0.4;
   color: #de8159;
-  content: '$$$$$$';
+  content: "$$$$$$";
 }
 .dash-stats-karma {
   margin: 0 !important;
