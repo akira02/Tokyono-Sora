@@ -60,7 +60,6 @@
 :is(url({)),
 .dash-group-right:hover #karma,
 #layout_body:has(.karma_tooltip:hover) .dash-group-right #karma,
-#layout_body:has(.friend-fan-editor-popview:hover) .dash-group-right #karma,
 :is(url(})) {
   transform: translate(5px, 20px);
 }

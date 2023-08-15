@@ -663,7 +663,6 @@ body:is(url(})) {
 .dash-group-right:hover,
 :is(url({)),
 #layout_body:has(.karma_tooltip:hover) .dash-group-right,
-#layout_body:has(.friend-fan-editor-popview:hover) .dash-group-right,
 :is(url(})) {
   max-height: 100vh;
   border-radius: 7px;
@@ -746,9 +745,6 @@ body:is(url(})) {
 :is(url({)),
 .dash-group-right:hover #karma_arrow,
 #layout_body:has(.karma_tooltip:hover) .dash-group-right #karma_arrow,
-#layout_body:has(.friend-fan-editor-popview:hover)
-  .dash-group-right
-  #karma_arrow,
 :is(url(})) {
   opacity: 1;
 }
@@ -795,7 +791,6 @@ body:is(url(})) {
 :is(url({)),
 .dash-group-right:hover #karma,
 #layout_body:has(.karma_tooltip:hover) .dash-group-right #karma,
-#layout_body:has(.friend-fan-editor-popview:hover) .dash-group-right #karma,
 :is(url(})) {
   transform: translate(20px, 20px);
   font-size: 50px;
