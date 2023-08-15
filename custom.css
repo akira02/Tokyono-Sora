@@ -12,27 +12,34 @@
 }
 /*圖片*/
 #dynamic_logo:before {
+  background-image: url("https://images.plurk.com/3eb4ioHZAN4uo4O4pey0FX.png");
+  /* 圖片尺寸 */
+  background-size: 25%;
+  /* 圖片位置 */
+  background-position: 100% 95%;
   content: "　";
   background-repeat: no-repeat;
-  background-size: 100%;
-  height: 300px;
-  width: 300px;
-  background-image: url("https://images.plurk.com/7ojjprVw544b3sfxIjFU5h.png ");
-  bottom: 80px;
-  right: 40px;
+  height: 100%;
+  width: 100%;
+  bottom: 0px;
+  right: 0px;
   position: fixed;
 }
 /*簽名*/
 #dynamic_logo:after {
+  background-image: url("https://raw.githubusercontent.com/akira02/akira02.github.io/master/img/signv2_animated.svg");
+  /* 圖片尺寸 */
+  background-size: contain;
+  /* 圖片位置 */
+  background-position: 100% 100%;
+  transform: rotate(5deg);
   content: "　";
-  position: fixed;
-  background-image: url("https://akira.eu.org/img/sign_animated.svg");
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 300px;
-  width: 400px;
-  bottom: 90px;
-  right: 20px;
+  height: 25%;
+  width: 20%;
+  bottom: 80px;
+  right: 7%;
+  position: fixed;
 }
 
 /* 改成世界線變動率風格卡馬值 */
@@ -48,7 +55,10 @@
 .dash-group-right {
   transform: translate(500px, 0);
 }
-.dash-group-right:hover #karma {
+:is(url({)),
+.dash-group-right:hover #karma,
+#layout_body:has(.pop-view:hover) .dash-group-right #karma,
+:is(url(})) {
   transform: translate(5px, 20px);
 }
 .dash-group-left:hover + .dash-group-right {
@@ -63,24 +73,13 @@
   content: "大小姐♂";
 }
 
-/* 覆蓋掉噗浪原本的背景圖 */
+/* 以上傳圖片覆蓋掉噗浪原本的背景圖 */
 ._lch_ {
-  background-image: url(https://chiaki.uk/Tokyono-Sora/img/default.jpg) !important;
+  background-image: url("https://images.plurk.com/YDabJWRfA3FSlPsxTveIS.jpg") !important;
   background-position: center !important;
   background-size: cover !important;
   background-attachment: fixed !important;
   backdrop-filter: none !important;
+  transition: opacity;
 }
-
-/* 白色模糊背景改為固定圖片（建議用產生器） */
-.cboxAnchor:not(.response) .plurk_cnt,
-#form_holder,
-._lch_ ~ .pop-window .pop-window-content,
-._lch_ ~ .pop-window .pop-window-view iframe {
-  /*在下面插入預先產生的模糊背景圖連結*/
-  background-image: url(https://chiaki.uk/Tokyono-Sora/img/default-light.jpg) !important;
-  background-position: center !important;
-  background-size: cover !important;
-  background-attachment: fixed !important;
-  backdrop-filter: none !important;
-}
+/* 若想保留噗浪原本的背景圖請刪除上面這段 */
