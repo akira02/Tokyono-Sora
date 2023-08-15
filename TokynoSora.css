@@ -291,6 +291,12 @@ body:is(url(})) {
   display: block;
   margin: 5px;
 }
+/*噗文工具列*/
+.manager > a {
+  color: rgba(172, 172, 172, 1);
+  display: inline-flex;
+  align-items: center;
+}
 /*噗文暱稱*/
 .block_cnt .cboxAnchor:not(.response) .td_qual {
   display: inline-block;
