@@ -483,8 +483,7 @@ body:is(url(})) {
 
 /*發文面板尺寸控制*/
 #plurk-dashboard .dash-group-form .segment-content {
-  min-height: 0;
-  padding: 7px;
+  min-height: 55px;
 }
 .dash-group-form:hover {
   z-index: 1100;
@@ -508,13 +507,13 @@ body:is(url(})) {
   flex-grow: 1;
   border-radius: 20px;
   min-width: 200px;
+  margin: 3px 0px 3px 4px;
 }
 /*發文選項icons*/
 #main_poster .icons_holder {
   order: 2;
   min-width: 190px;
-  margin: 0;
-  margin-left: 10px;
+  margin: 3px 0px 3px 10px;
 }
 /*發文按鈕*/
 #main_poster .submit_img {
@@ -526,7 +525,7 @@ body:is(url(})) {
   border-radius: 20px;
   padding: 0 15px 0 15px;
   line-height: 35px;
-  margin: 0;
+  margin: 3px 2px;
 }
 .submit_img_color {
   background: var(--theme-main-color);
