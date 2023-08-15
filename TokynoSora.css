@@ -417,7 +417,7 @@ body:is(url(})) {
 /*回應計數(未讀)*/
 .new .response_count {
   position: relative !important;
-  background-color: var(--theme-main-color);
+  background-color: rgba(255, 87, 77, 1);
   top: -13px;
   left: -15px;
   box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
