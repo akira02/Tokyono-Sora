@@ -25,8 +25,10 @@ html,
 .name {
   text-shadow: none;
 }
+:is(url({)),
 .plurk a.ex_link,
-.plurk a.meta {
+.plurk a.meta,
+:is(url(})) {
   color: #3c6ae0;
 }
 .block_cnt .cboxAnchor:not(.response) .plurk_cnt,
@@ -50,6 +52,7 @@ html,
 }
 .textarea_holder textarea {
   background-color: transparent;
+  color: var(--plurk-text-color);
 }
 #plurk-dashboard .dash-group-form {
   background-color: var(--theme-dark-bg-color);
@@ -60,26 +63,27 @@ html,
 }
 /* 通知器 */
 #filter_tab a.filter_selected {
-  color: var(--theme-sub-color);
+  color: var(--plurk-text-color);
   background: var(--theme-main-color);
 }
 #updater,
 #updater .item,
 #updater .item a {
-  color: var(--theme-main-color);
+  color: white;
 }
 #filter_tab a,
 #updater .item a {
   background: var(--theme-dark-bg-color);
+  backdrop-filter: saturate(var(--blur-saturate)) blur(var(--blur-px));
+  -webkit-backdrop-filter: saturate(var(--blur-saturate)) blur(var(--blur-px));
 }
 #updater .item a:hover {
-  color: var(--theme-sub-color);
+  color: var(--plurk-text-color);
   background: var(--theme-main-color);
 }
 
 /* 彈出視窗 */
-._lch_ ~ .pop-window .pop-window-content,
-._lch_ ~ .pop-window .pop-window-view iframe {
+._lch_ ~ .pop-window .pop-window-content {
   background: var(--theme-dark-bg-color) !important;
 }
 ._lch_ ~ .pop-window .show-response-manager,
@@ -91,7 +95,7 @@ html,
   border: 1px solid rgba(255, 255, 255, 0.12);
 }
 ._lch_ ~ .pop-window .plurk {
-  color: var(--theme-sub-color);
+  color: var(--plurk-text-color);
 }
 ._lch_ ~ .pop-window .response_box,
 ._lch_ ~ .pop-window .cbox_ads,
@@ -102,16 +106,28 @@ html,
   background: #5f5f5f;
 }
 :is(url({)),
-.pop-menu li a,
+.pop-view#noti-list .header,
 :is(url(})) {
-  color: var(--theme-sub-color) !important;
+  border-color: #525252;
 }
 :is(url({)),
-.pop-view-content,
-.pop-menu li a:not(.no-hover):hover,
+.pop-view.pop-menu li a,
+.pop-view#noti-list li,
+.pop-view#noti-list li a,
+:is(url(})) {
+  color: var(--plurk-text-color);
+}
+:is(url({)),
+.pop-view,
 :is(url(})) {
   border: 1px solid rgba(255, 255, 255, 0.12);
   background: var(--theme-dark-bg-color);
 }
+:is(url({)),
+.pop-menu .pop-view-content li a:not(.no-hover):hover,
+:is(url(})) {
+  background: var(--theme-main-color);
+}
+
 
 /* ------END Dark Mode Plugin------ */

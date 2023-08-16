@@ -76,9 +76,9 @@
 
 /* 透明topbar */
 :is(url({)),
-.bar-color,
+#top_bar,
 :is(url(})) {
-  background: transparent;
+  background: none;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
 }
