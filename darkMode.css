@@ -29,7 +29,7 @@ html,
 .plurk a.ex_link,
 .plurk a.meta,
 :is(url(})) {
-  color: #3c6ae0;
+  color: #6ba5ff;
 }
 .block_cnt .cboxAnchor:not(.response) .plurk_cnt,
 #form_holder {
@@ -88,7 +88,7 @@ html,
 }
 ._lch_ ~ .pop-window .show-response-manager,
 ._lch_ ~ .pop-window textarea {
-  background: transparent;
+  background: none;
 }
 ._lch_ ~ .pop-window .input_holder {
   background-color: transparent;
@@ -114,6 +114,9 @@ html,
 .pop-view.pop-menu li a,
 .pop-view#noti-list li,
 .pop-view#noti-list li a,
+.pop-window .pop-window-view,
+.pop-window .pop-window-view .user_list a,
+.pop-window .pop-window-view .user_list .nick_name,
 :is(url(})) {
   color: var(--plurk-text-color);
 }
@@ -124,10 +127,9 @@ html,
   background: var(--theme-dark-bg-color);
 }
 :is(url({)),
-.pop-menu .pop-view-content li a:not(.no-hover):hover,
+.pop-window .pop-window-view .user_list a:hover,
 :is(url(})) {
   background: var(--theme-main-color);
 }
-
 
 /* ------END Dark Mode Plugin------ */

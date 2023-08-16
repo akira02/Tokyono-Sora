@@ -167,8 +167,15 @@ body:is(url(})) {
 .pop-view,
 :is(url(})) {
   background: var(--plurk-bg-color);
+  color: var(--plurk-text-color);
   backdrop-filter: saturate(var(--blur-saturate)) blur(var(--blur-px));
   -webkit-backdrop-filter: saturate(var(--blur-saturate)) blur(var(--blur-px));
+}
+:is(url({)),
+.pop-menu .pop-view-content li a:not(.no-hover):hover,
+:is(url(})) {
+  color: white;
+  background: var(--theme-main-color);
 }
 :is(url({)),
 .pop-view#noti-list li.new-noti,
@@ -179,6 +186,7 @@ body:is(url(})) {
 :is(url({)),
 .pop-view#noti-list .pop-view-content,
 #noti-list ul,
+.pop-window .pop-window-view .user_list .title,
 :is(url(})) {
   background: none;
 }
@@ -409,6 +417,20 @@ body:is(url(})) {
 }
 .icons_holder .pif-emoticon:after {
   display: none;
+}
+.response-manager {
+  border-radius: 7px;
+  background: var(--plurk-bg-color);
+  border: none;
+  overflow: hidden;
+}
+.response-manager .edit:hover,
+.response-manager .mention:hover,
+.response-manager .option:hover,
+.response-manager .edit.popview-targeting,
+.response-manager .mention.popview-targeting,
+.response-manager .option.popview-targeting {
+  background: var(--theme-main-color);
 }
 /*未讀噗邊框*/
 .new .plurk_cnt {
