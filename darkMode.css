@@ -1,0 +1,117 @@
+/* ---------------------------
+  Tokyono-Sora Dark Mode Plugin
+------------------------------ */
+
+:is(url({)),
+html,
+:is(url(})) {
+  /* 主題色 */
+  --theme-main-color: rgb(184, 63, 57);
+  /* 暗黑模式背景色 */
+  --theme-dark-bg-color: rgba(29, 29, 31, 0.72);
+  /* 噗文背景色 */
+  --plurk-bg-color: rgba(29, 29, 31, 0.72);
+  /* 噗文文字顏色 */
+  --plurk-text-color: rgba(255, 255, 255, 0.87);
+}
+
+.plurk_cnt,
+.response_box,
+.name,
+#timeline_holder table td,
+._lch_ ~ .pop-window .name {
+  color: var(--plurk-text-color);
+}
+.name {
+  text-shadow: none;
+}
+.plurk a.ex_link,
+.plurk a.meta {
+  color: #3c6ae0;
+}
+.block_cnt .cboxAnchor:not(.response) .plurk_cnt,
+#form_holder {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+#form_holder {
+  border-top: 0;
+}
+.block_cnt .cboxAnchor:not(.response).plurk_box .plurk_cnt {
+  border-bottom: 0;
+}
+/* 未讀噗邊框 */
+.new .plurk_cnt {
+  box-shadow: 0px 0px 9px 0px rgba(104, 27, 1, 0.74);
+}
+/* 輸入框 */
+.input_holder {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.textarea_holder textarea {
+  background-color: transparent;
+}
+#plurk-dashboard .dash-group-form {
+  background-color: var(--theme-dark-bg-color);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.m_qualifier {
+  background: #5f5f5f;
+}
+/* 通知器 */
+#filter_tab a.filter_selected {
+  color: var(--theme-sub-color);
+  background: var(--theme-main-color);
+}
+#updater,
+#updater .item,
+#updater .item a {
+  color: var(--theme-main-color);
+}
+#filter_tab a,
+#updater .item a {
+  background: var(--theme-dark-bg-color);
+}
+#updater .item a:hover {
+  color: var(--theme-sub-color);
+  background: var(--theme-main-color);
+}
+
+/* 彈出視窗 */
+._lch_ ~ .pop-window .pop-window-content,
+._lch_ ~ .pop-window .pop-window-view iframe {
+  background: var(--theme-dark-bg-color) !important;
+}
+._lch_ ~ .pop-window .show-response-manager,
+._lch_ ~ .pop-window textarea {
+  background: transparent;
+}
+._lch_ ~ .pop-window .input_holder {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+._lch_ ~ .pop-window .plurk {
+  color: var(--theme-sub-color);
+}
+._lch_ ~ .pop-window .response_box,
+._lch_ ~ .pop-window .cbox_ads,
+._lch_ ~ .pop-window .plurk_box .mini_form {
+  border-color: #525252;
+}
+._lch_ ~ .pop-window .m_qualifier {
+  background: #5f5f5f;
+}
+:is(url({)),
+.pop-menu li a,
+:is(url(})) {
+  color: var(--theme-sub-color) !important;
+}
+:is(url({)),
+.pop-view-content,
+.pop-menu li a:not(.no-hover):hover,
+:is(url(})) {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: var(--theme-dark-bg-color);
+}
+
+/* ------END Dark Mode Plugin------ */

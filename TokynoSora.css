@@ -1,5 +1,5 @@
 /* 
-   Tokyono-Sora v1.3.1
+   Tokyono-Sora v1.3.2
    Design by Chiaki.C https://plurk.com/akira02
    https://github.com/akira02/Tokyono-Sora/
 */
@@ -35,9 +35,8 @@ html,
 body,
 html,
 :is(url(})) {
-  font-family: "M 翔鶴黑體 TC", "PingFang TC", "LiHei Pro", "Heiti TC",
-    "Source Han Sans TC", "Noto Sans TC", "Hiragino Sans", "Century Gothic",
-    "Microsoft Jhenghei", "微軟正黑體", sans-serif !important;
+  font-family: 'M 翔鶴黑體 TC', 'PingFang TC', 'LiHei Pro', 'Heiti TC', 'Source Han Sans TC', 'Noto Sans TC',
+    'Hiragino Sans', 'Century Gothic', 'Microsoft Jhenghei', '微軟正黑體', sans-serif !important;
 }
 :is(url({)),
 .text_holder,
@@ -109,8 +108,7 @@ body:is(url(})) {
 
 /*載入動畫*/
 .loading > img {
-  background: url(https://raw.githubusercontent.com/akira02/Tokyono-Sora/main/loading.svg)
-    no-repeat;
+  background: url(https://raw.githubusercontent.com/akira02/Tokyono-Sora/main/loading.svg) no-repeat;
   width: 90px;
   height: 90px;
   background-size: 90px;
@@ -118,8 +116,7 @@ body:is(url(})) {
   margin-top: 17px;
 }
 .loading-div {
-  background: url(https://raw.githubusercontent.com/akira02/Tokyono-Sora/main/loading.svg)
-    no-repeat;
+  background: url(https://raw.githubusercontent.com/akira02/Tokyono-Sora/main/loading.svg) no-repeat;
   background-size: 120px;
   width: 120px;
   height: 120px;
@@ -132,11 +129,10 @@ body:is(url(})) {
   display: none;
 }
 ._lch_ ~ .pop-window .loading::after {
-  content: " ";
+  content: ' ';
   display: block;
   position: relative;
-  background: url(https://raw.githubusercontent.com/akira02/Tokyono-Sora/main/loading.svg)
-    no-repeat;
+  background: url(https://raw.githubusercontent.com/akira02/Tokyono-Sora/main/loading.svg) no-repeat;
   background-size: 90px;
   width: 90px;
   height: 90px;
@@ -151,7 +147,6 @@ body:is(url(})) {
 ._lch_ ~ .pop-window .img-holder {
   background: none !important;
 }
-
 ._lch_ ~ .pop-window .pop-window-view {
   border-radius: 7px !important;
 }
@@ -167,6 +162,24 @@ body:is(url(})) {
   background: rgba(255, 255, 255, 0.9) !important;
   backdrop-filter: saturate(var(--blur-saturate)) blur(var(--blur-px));
   -webkit-backdrop-filter: saturate(var(--blur-saturate)) blur(var(--blur-px));
+}
+:is(url({)),
+#noti-list .pop-view-content,
+.pop-view,
+:is(url(})) {
+  background: var(--plurk-bg-color);
+  backdrop-filter: saturate(var(--blur-saturate)) blur(var(--blur-px));
+  -webkit-backdrop-filter: saturate(var(--blur-saturate)) blur(var(--blur-px));
+}
+:is(url({)),
+#noti-list ul,
+:is(url(})) {
+  background: none;
+}
+:is(url({)),
+#noti-list li,
+:is(url(})) {
+  border: none;
 }
 /*彈出視窗輸入框圓角*/
 ._lch_ ~ .pop-window .plurkForm.mini-mode .input_holder,
@@ -230,6 +243,7 @@ body:is(url(})) {
 #updater .item a {
   color: var(--theme-main-color);
 }
+#filter_tab a,
 #updater .item a {
   background: var(--theme-sub-color);
 }
@@ -293,7 +307,7 @@ body:is(url(})) {
 }
 /*噗文工具列*/
 .manager > a {
-  color: #AFB8CC;
+  color: #afb8cc;
   display: inline-flex;
   align-items: center;
 }
@@ -307,8 +321,8 @@ body:is(url(})) {
 .name {
   font-size: 1.1em;
   font-weight: 800;
-  text-shadow: #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px,
-    #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px;
+  text-shadow: #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px,
+    #fff 0px 0px 1px;
 }
 /*噗文大頭貼*/
 .td_img {
@@ -334,9 +348,7 @@ body:is(url(})) {
 .block_cnt .cboxAnchor:not(.response) .text_holder {
   width: 100%;
 }
-.block_cnt
-  .cboxAnchor:not(.response):not(.display):not(.bigplurk)
-  .text_holder {
+.block_cnt .cboxAnchor:not(.response):not(.display):not(.bigplurk) .text_holder {
   max-height: var(--plurk-max-height) !important;
 }
 /*選中的噗文*/
@@ -561,8 +573,7 @@ body:is(url(})) {
   background: none;
   border-radius: 150px;
   max-height: 115px;
-  transition: max-height 1s, transform 1s, background 0.5s,
-    border-radius 0.3s 1s;
+  transition: max-height 1s, transform 1s, background 0.5s, border-radius 0.3s 1s;
   overflow: hidden;
   color: var(--theme-sub-color);
   background-color: var(--dashboard-bg-color);
@@ -606,25 +617,13 @@ body:is(url(})) {
   display: flex;
 }
 #plurk-dashboard .dash-segment-profile #dash-profile .profile-info .edit-alias,
-#plurk-dashboard
-  .dash-segment-profile
-  #dash-profile
-  .profile-info
-  .remove-alias {
+#plurk-dashboard .dash-segment-profile #dash-profile .profile-info .remove-alias {
   max-width: 0px;
   transition: all 0.3s;
   margin-right: 0px;
 }
-#plurk-dashboard
-  .dash-segment-profile
-  #dash-profile:hover
-  .profile-info
-  .edit-alias,
-#plurk-dashboard
-  .dash-segment-profile
-  #dash-profile:hover
-  .profile-info
-  .remove-alias {
+#plurk-dashboard .dash-segment-profile #dash-profile:hover .profile-info .edit-alias,
+#plurk-dashboard .dash-segment-profile #dash-profile:hover .profile-info .remove-alias {
   max-width: 10px;
   display: block;
   margin-right: 8px;
@@ -632,7 +631,7 @@ body:is(url(})) {
 #dash-profile .profile-info #alias {
   transition: all 0.5s;
 }
-#dash-profile .profile-info #alias[contenteditable="true"] {
+#dash-profile .profile-info #alias[contenteditable='true'] {
   color: black;
   background-color: white;
   padding: 0 8px;
@@ -709,7 +708,7 @@ body:is(url(})) {
 }
 /*在展開前避免出現karma資訊*/
 .dash-stats-karma:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 250px;
   height: 100px;
@@ -724,9 +723,8 @@ body:is(url(})) {
 
 @font-face {
   font-family: nixie;
-  src: url("https://chiaki.uk/assets/AkiNixieNumber-Regular.woff2")
-      format("woff2"),
-    url("https://chiaki.uk/assets/AkiNixieNumber-Regular.woff") format("woff");
+  src: url('https://chiaki.uk/assets/AkiNixieNumber-Regular.woff2') format('woff2'),
+    url('https://chiaki.uk/assets/AkiNixieNumber-Regular.woff') format('woff');
 }
 
 .karma_hover {
@@ -768,8 +766,7 @@ body:is(url(})) {
   padding: 0.2em;
   padding-bottom: 0.4em;
   color: #ff9b28;
-  text-shadow: 0px 0px 6px rgba(255, 65, 0, 0.7), 0px 0px 20px #ff8000,
-    0px 0px 10px rgb(118, 18, 3) !important;
+  text-shadow: 0px 0px 6px rgba(255, 65, 0, 0.7), 0px 0px 20px #ff8000, 0px 0px 10px rgb(118, 18, 3) !important;
   transition: transform 1s, font-size 1s;
 }
 .dash-stats-karma .help {
@@ -786,7 +783,7 @@ body:is(url(})) {
   left: 0.2em;
   opacity: 0.4;
   color: #de8159;
-  content: "$$$$$$";
+  content: '$$$$$$';
 }
 .dash-stats-karma {
   margin: 0 !important;

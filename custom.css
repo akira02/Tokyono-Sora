@@ -2,18 +2,18 @@
 
 /* 換滑鼠游標 */
 * {
-  cursor: url("https://chiaki.uk/Zero-Memo/img/arrow.gif"), auto;
+  cursor: url('https://chiaki.uk/Zero-Memo/img/arrow.gif'), auto;
 }
 
 /* 噗寶 */
 /*圖片*/
 ._lch_:before {
-  background-image: url("https://images.plurk.com/3eb4ioHZAN4uo4O4pey0FX.png");
+  background-image: url('https://images.plurk.com/3eb4ioHZAN4uo4O4pey0FX.png');
   /* 圖片尺寸 */
   background-size: 25%;
   /* 圖片位置 */
   background-position: 100% 95%;
-  content: "　";
+  content: '　';
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
@@ -23,13 +23,13 @@
 }
 /*簽名*/
 ._lch_:after {
-  background-image: url("https://raw.githubusercontent.com/akira02/akira02.github.io/master/img/signv2_animated.svg");
+  background-image: url('https://raw.githubusercontent.com/akira02/akira02.github.io/master/img/signv2_animated.svg');
   /* 圖片尺寸 */
   background-size: contain;
   /* 圖片位置 */
   background-position: 100% 100%;
   transform: rotate(5deg);
-  content: "　";
+  content: '　';
   background-repeat: no-repeat;
   height: 25%;
   width: 20%;
@@ -41,15 +41,14 @@
 /* 改成世界線變動率風格卡馬值 */
 @font-face {
   font-family: nixie2;
-  src: url("https://chiaki.uk/assets/AkiNixieNumber-karma.woff2")
-      format("woff2"),
-    url("https://chiaki.uk/assets/AkiNixieNumber-karma.woff") format("woff");
+  src: url('https://chiaki.uk/assets/AkiNixieNumber-karma.woff2') format('woff2'),
+    url('https://chiaki.uk/assets/AkiNixieNumber-karma.woff') format('woff');
 }
 #karma::before {
-  content: "1·0";
+  content: '1·0';
 }
 #karma::after {
-  content: "$$$$$$$$";
+  content: '$$$$$$$$';
 }
 #karma {
   font-family: nixie2;
@@ -72,7 +71,7 @@
   display: none;
 }
 #span_years:after {
-  content: "大小姐♂";
+  content: '大小姐♂';
 }
 
 /* 透明topbar */
@@ -86,7 +85,7 @@
 
 /* 以上傳圖片覆蓋掉噗浪原本的背景圖 */
 ._lch_ {
-  background-image: url("https://images.plurk.com/YDabJWRfA3FSlPsxTveIS.jpg") !important;
+  background-image: url('https://images.plurk.com/YDabJWRfA3FSlPsxTveIS.jpg') !important;
   background-position: center !important;
   background-size: cover !important;
   background-attachment: fixed !important;
