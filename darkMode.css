@@ -19,7 +19,8 @@ html,
 .response_box,
 .name,
 #timeline_holder table td,
-._lch_ ~ .pop-window .name {
+._lch_ ~ .pop-window .name,
+.list-container .empty {
   color: var(--plurk-text-color);
 }
 .name {

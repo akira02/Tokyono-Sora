@@ -200,6 +200,11 @@ body:is(url(})) {
 :is(url(})) {
   border: none;
 }
+:is(url({)),
+#noti-list li:hover,
+:is(url(})) {
+  background: rgba(0, 0, 0, 0.1);
+}
 /*彈出視窗輸入框圓角*/
 ._lch_ ~ .pop-window .plurkForm.mini-mode .input_holder,
 ._lch_ ~ .pop-window .mini_form .input_holder {
