@@ -258,7 +258,7 @@ body:is(url(})) {
 }
 .unread_generic {
   border-radius: 12px;
-  background-color: var(var(--theme-notify-color));
+  background-color: var(--theme-notify-color);
 }
 #filter_tab a.filter_selected {
   color: var(--theme-sub-color);
