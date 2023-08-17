@@ -1,5 +1,5 @@
 /* 
-   Tokyono-Sora v1.3.2
+   Tokyono-Sora v1.3.3
    Design by Chiaki.C https://plurk.com/akira02
    https://github.com/akira02/Tokyono-Sora/
 */
@@ -11,6 +11,8 @@ html,
   --theme-main-color: rgba(255, 87, 77, 1);
   /* 副主題色(文字顏色) */
   --theme-sub-color: rgba(255, 255, 255, 1);
+  /* 未讀通知色 */
+  --theme-notify-color: rgba(255, 87, 77, 1);
   /* 噗文字體大小 */
   --plurk-font-size: 14px;
   /* 噗文背景色 */
@@ -22,7 +24,7 @@ html,
   /* top_bar背景色 */
   --top-bar-bg-color: rgba(29, 29, 31, 0.72);
   /* 模糊程度 */
-  --blur-px: 20px;
+  --blur-px: 30px;
   --blur-saturate: 180%;
   /* 噗文高度 */
   --plurk-max-height: calc(8vh - 30px);
@@ -181,7 +183,7 @@ body:is(url(})) {
 .pop-view#noti-list li.new-noti,
 :is(url(})) {
   background: transparent;
-  color: var(--theme-main-color);
+  color: var(--theme-notify-color);
 }
 :is(url({)),
 .pop-view#noti-list .pop-view-content,
@@ -256,7 +258,7 @@ body:is(url(})) {
 }
 .unread_generic {
   border-radius: 12px;
-  background-color: var(--theme-main-color);
+  background-color: var(var(--theme-notify-color));
 }
 #filter_tab a.filter_selected {
   color: var(--theme-sub-color);
@@ -471,7 +473,7 @@ body:is(url(})) {
 /*回應計數(未讀)*/
 .new .response_count {
   position: relative !important;
-  background-color: rgba(255, 87, 77, 1);
+  background-color: var(--theme-notify-color);
   top: -13px;
   left: -15px;
   box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);

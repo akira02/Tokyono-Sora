@@ -5,12 +5,13 @@
 :is(url({)),
 html,
 :is(url(})) {
+  /* 覆蓋原本設定的主題色 */
   /* 主題色 */
-  --theme-main-color: rgb(184, 63, 57);
+  --theme-main-color: rgb(67, 99, 140);
   /* 暗黑模式背景色 */
   --theme-dark-bg-color: rgba(29, 29, 31, 0.72);
   /* 噗文背景色 */
-  --plurk-bg-color: rgba(29, 29, 31, 0.72);
+  --plurk-bg-color: rgba(43, 43, 43, 0.72);
   /* 噗文文字顏色 */
   --plurk-text-color: rgba(255, 255, 255, 0.87);
 }
@@ -34,7 +35,7 @@ html,
 }
 .block_cnt .cboxAnchor:not(.response) .plurk_cnt,
 #form_holder {
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 #form_holder {
   border-top: 0;
