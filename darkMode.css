@@ -13,7 +13,7 @@ html,
   /* 噗文背景色 */
   --plurk-bg-color: rgba(43, 43, 43, 0.72);
   /* 噗文文字顏色 */
-  --plurk-text-color: rgba(255, 255, 255, 0.87);
+  --plurk-text-color: rgba(235, 235, 235);
 }
 
 .plurk_cnt,
@@ -45,7 +45,7 @@ html,
 }
 /* 未讀噗邊框 */
 .new .plurk_cnt {
-  box-shadow: 0px 0px 9px 0px rgba(104, 27, 1, 0.74);
+  box-shadow: none;
 }
 /* 輸入框 */
 .input_holder {

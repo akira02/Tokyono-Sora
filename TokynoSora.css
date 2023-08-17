@@ -183,7 +183,7 @@ body:is(url(})) {
 .pop-view#noti-list li.new-noti,
 :is(url(})) {
   background: transparent;
-  color: var(--theme-notify-color);
+  font-weight: 800;
 }
 :is(url({)),
 .pop-view#noti-list .pop-view-content,
