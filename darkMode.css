@@ -52,7 +52,9 @@ html,
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.12);
 }
-.textarea_holder textarea {
+:is(url({)),
+.textarea_holder textarea,
+:is(url(})) {
   background-color: transparent;
   color: var(--plurk-text-color);
 }
@@ -89,7 +91,10 @@ html,
   background: var(--theme-dark-bg-color) !important;
 }
 ._lch_ ~ .pop-window .show-response-manager,
-._lch_ ~ .pop-window textarea {
+._lch_ ~ .pop-window textarea,
+:is(url({)),
+#emoticons-holder,
+:is(url(})) {
   background: none;
 }
 ._lch_ ~ .pop-window .input_holder {
@@ -109,6 +114,8 @@ html,
 }
 :is(url({)),
 .pop-view#noti-list .header,
+.pop-view#emoticon-selector .header,
+.pop-view#emoticon-selector #emoticon-tabs,
 :is(url(})) {
   border-color: #525252;
 }
@@ -116,6 +123,7 @@ html,
 .pop-view.pop-menu li a,
 .pop-view#noti-list li,
 .pop-view#noti-list li a,
+.pop-view#emoticon-selector .header .desc .title,
 .pop-window .pop-window-view,
 .pop-window .pop-window-view .user_list a,
 .pop-window .pop-window-view .user_list .nick_name,
