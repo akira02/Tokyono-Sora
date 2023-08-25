@@ -151,6 +151,7 @@ body:is(url(})) {
 }
 ._lch_ ~ .pop-window .pop-window-view {
   border-radius: 7px !important;
+  font-size: var(--plurk-font-size);
 }
 ._lch_ ~ .pop-window .cbox_left {
   background: black !important;
@@ -421,6 +422,13 @@ body:is(url(})) {
   -webkit-backdrop-filter: saturate(var(--blur-saturate)) blur(var(--blur-px));
   border-radius: 0 0 7px 7px;
   margin-top: -1px;
+  font-size: var(--plurk-font-size);
+}
+:is(url({)),
+body .plurkForm.mini-mode .textarea_holder textarea,
+body .mini_form .textarea_holder textarea,
+:is(url(})) {
+  font-size: var(--plurk-font-size);
 }
 .icons_holder .pif-emoticon:after {
   display: none;
