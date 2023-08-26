@@ -408,7 +408,7 @@ body:is(url(})) {
   border: none;
 }
 .cboxAnchor.response .plurk_cnt {
-  background: none !important;
+  background: none;
 }
 .plurk_box .mini_form {
   background: none !important;
