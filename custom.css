@@ -83,6 +83,15 @@
   -webkit-backdrop-filter: none;
 }
 
+/* 點開噗文後，禁用河道左右捲動 */
+#timeline_holder:has(.link_extend.plurk_box) {
+  pointer-events: none;
+}
+#timeline_holder .link_extend.plurk_box .manager,
+#timeline_holder .link_extend.plurk_box a {
+  pointer-events: auto;
+}
+
 /* 以上傳圖片覆蓋掉噗浪原本的背景圖 */
 ._lch_ {
   background-image: url('https://images.plurk.com/YDabJWRfA3FSlPsxTveIS.jpg') !important;
