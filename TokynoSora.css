@@ -1,5 +1,5 @@
 /* 
-   Tokyono-Sora v1.3.3
+   Tokyono-Sora v1.3.4
    Design by Chiaki.C https://plurk.com/akira02
    https://github.com/akira02/Tokyono-Sora/
 */
@@ -648,7 +648,7 @@ body .mini_form .textarea_holder textarea,
 }
 /*自介連結顏色*/
 #plurk-dashboard #about_me a {
-  color: var(--theme-main-color) !important;
+  color: var(--theme-main-color);
 }
 /*噗幣位置*/
 #plurk-dashboard .profile-icons {
