@@ -1,5 +1,5 @@
 /* 
-   Tokyono-Sora v1.3.4
+   Tokyono-Sora v1.3.5
    Design by Chiaki.C https://plurk.com/akira02
    https://github.com/akira02/Tokyono-Sora/
 */
@@ -436,7 +436,7 @@ body .mini_form .textarea_holder textarea,
 .response-manager {
   border-radius: 7px;
   background: var(--plurk-bg-color);
-  border: none;
+  border-color: transparent;
   overflow: hidden;
 }
 .response-manager .edit:hover,
