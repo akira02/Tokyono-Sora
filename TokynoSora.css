@@ -1,12 +1,11 @@
 /* 
-   Tokyono-Sora v1.3.5
+   Tokyono-Sora v1.3.6
    Design by Chiaki.C https://plurk.com/akira02
    https://github.com/akira02/Tokyono-Sora/
 */
 
-:is(url({)),
-html,
-:is(url(})) {
+'{:is('{'), 
+html /*}'*/ {
   /* 主題色 */
   --theme-main-color: rgba(255, 87, 77, 1);
   /* 副主題色(文字顏色) */
@@ -33,16 +32,14 @@ html,
 }
 
 /*   整體控制   */
-:is(url({)),
+'{:is('{'), 
 body,
-html,
-:is(url(})) {
+html /*}'*/ {
   font-family: 'M 翔鶴黑體 TC', 'PingFang TC', 'LiHei Pro', 'Heiti TC', 'Source Han Sans TC', 'Noto Sans TC',
     'Hiragino Sans', 'Century Gothic', 'Microsoft Jhenghei', '微軟正黑體', sans-serif !important;
 }
-:is(url({)),
-.text_holder,
-:is(url(})) {
+'{:is('{'), 
+.text_holder /*}'*/ {
   line-height: 1.5em;
 }
 ._lc_#layout_content {
@@ -55,22 +52,19 @@ html,
 }
 
 /*top_bar背景及文字顏色*/
-:is(url({)),
-#top_bar,
-:is(url(})) {
+'{:is('{'), 
+#top_bar /*}'*/ {
   color: var(--top-bar-text-color);
   background: var(--top-bar-bg-color);
   backdrop-filter: saturate(var(--blur-saturate)) blur(var(--blur-px));
   -webkit-backdrop-filter: saturate(var(--blur-saturate)) blur(var(--blur-px));
 }
-:is(url({)),
-.bar-color,
-:is(url(})) {
+'{:is('{'), 
+.bar-color /*}'*/ {
   background: none;
 }
-:is(url({)),
-#top_bar #top-bar-main .tab.current:after,
-:is(url(})) {
+'{:is('{'), 
+#top_bar #top-bar-main .tab.current:after /*}'*/ {
   background: rgba(208, 208, 200, 0.7);
   left: calc(50% - 1.5px);
   top: 32px;
@@ -80,24 +74,22 @@ html,
 }
 
 /*捲軸調整*/
-:is(url({)),
-body::-webkit-scrollbar,
-:is(url(})) {
+'{:is('{'), 
+body::-webkit-scrollbar /*}'*/ {
   width: 0px;
 }
-:is(url({)),
+'{:is('{'), 
 *::-webkit-scrollbar,
-body:has(#bookmark_holder)::-webkit-scrollbar,
-:is(url(})) {
+body:has(#bookmark_holder)::-webkit-scrollbar /*}'*/ {
   width: 5px;
 }
-:is(url({)),
+'{:is('{'), 
 *::-webkit-scrollbar-track,
 body:is(url(})) {
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
-:is(url({)),
+'{:is('{'), 
 *::-webkit-scrollbar-thumb,
 body:is(url(})) {
   -webkit-border-radius: 4px;
@@ -166,46 +158,39 @@ body:is(url(})) {
   backdrop-filter: saturate(var(--blur-saturate)) blur(var(--blur-px));
   -webkit-backdrop-filter: saturate(var(--blur-saturate)) blur(var(--blur-px));
 }
-:is(url({)),
-.pop-view,
-:is(url(})) {
+'{:is('{'), 
+.pop-view /*}'*/ {
   background: var(--plurk-bg-color);
   color: var(--plurk-text-color);
   backdrop-filter: saturate(var(--blur-saturate)) blur(var(--blur-px));
   -webkit-backdrop-filter: saturate(var(--blur-saturate)) blur(var(--blur-px));
 }
-:is(url({)),
-.pop-menu .pop-view-content li a:not(.no-hover):hover,
-:is(url(})) {
+'{:is('{'), 
+.pop-menu .pop-view-content li a:not(.no-hover):hover /*}'*/ {
   color: white;
   background: var(--theme-main-color);
 }
-:is(url({)),
-.pop-view#noti-list li.new-noti,
-:is(url(})) {
+'{:is('{'), 
+.pop-view#noti-list li.new-noti /*}'*/ {
   background: transparent;
   font-weight: 800;
 }
-:is(url({)),
+'{:is('{'), 
 .pop-view#noti-list .pop-view-content,
 #noti-list ul,
-.pop-window .pop-window-view .user_list .title,
-:is(url(})) {
+.pop-window .pop-window-view .user_list .title /*}'*/ {
   background: none;
 }
-:is(url({)),
-.pop-menu li.sep,
-:is(url(})) {
+'{:is('{'), 
+.pop-menu li.sep /*}'*/ {
   background: rgba(223, 223, 223, 1);
 }
-:is(url({)),
-#noti-list li,
-:is(url(})) {
+'{:is('{'), 
+#noti-list li /*}'*/ {
   border: none;
 }
-:is(url({)),
-#noti-list li:hover,
-:is(url(})) {
+'{:is('{'), 
+#noti-list li:hover /*}'*/ {
   background: rgba(0, 0, 0, 0.1);
 }
 /*彈出視窗輸入框圓角*/
@@ -424,10 +409,9 @@ body:is(url(})) {
   margin-top: -1px;
   font-size: var(--plurk-font-size);
 }
-:is(url({)),
+'{:is('{'), 
 body .plurkForm.mini-mode .textarea_holder textarea,
-body .mini_form .textarea_holder textarea,
-:is(url(})) {
+body .mini_form .textarea_holder textarea /*}'*/ {
   font-size: var(--plurk-font-size);
 }
 .icons_holder .pif-emoticon:after {
@@ -710,10 +694,9 @@ body .mini_form .textarea_holder textarea,
   transform: translate(540px, 0);
   z-index: 1500;
 }
-.dash-group-right:hover,
-:is(url({)),
-#layout_body:has(.karma_tooltip:hover) .dash-group-right,
-:is(url(})) {
+'{:is('{'), 
+#layout_body .dash-group-right:hover,
+#layout_body:has(.karma_tooltip:hover) .dash-group-right /*}'*/ {
   max-height: 100vh;
   border-radius: 7px;
   transition: max-height 1s, background 0s, transform 1s, border-radius 0.3s;
@@ -791,10 +774,9 @@ body .mini_form .textarea_holder textarea,
   opacity: 0;
   transition: opacity 0.5s 0.5s;
 }
-:is(url({)),
+'{:is('{'), 
 .dash-group-right:hover #karma_arrow,
-#layout_body:has(.karma_tooltip:hover) .dash-group-right #karma_arrow,
-:is(url(})) {
+#layout_body:has(.karma_tooltip:hover) .dash-group-right #karma_arrow /*}'*/ {
   opacity: 1;
 }
 #karma_arrow.pif-arrow-up {
@@ -836,10 +818,9 @@ body .mini_form .textarea_holder textarea,
 .dash-stats-karma {
   margin: 0 !important;
 }
-:is(url({)),
+'{:is('{'), 
 .dash-group-right:hover #karma,
-#layout_body:has(.karma_tooltip:hover) .dash-group-right #karma,
-:is(url(})) {
+#layout_body:has(.karma_tooltip:hover) .dash-group-right #karma /*}'*/ {
   transform: translate(20px, 20px);
   font-size: 50px;
 }

@@ -2,9 +2,8 @@
   Tokyono-Sora Dark Mode Plugin
 ------------------------------ */
 
-:is(url({)),
-html,
-:is(url(})) {
+'{:is('{'), 
+html /*}'*/  {
   /* 覆蓋原本設定的主題色 */
   /* 主題色 */
   --theme-main-color: rgb(67, 99, 140);
@@ -27,11 +26,10 @@ html,
 .name {
   text-shadow: none;
 }
-:is(url({)),
+'{:is('{'), 
 .plurk a.ex_link,
 .plurk a.meta,
-._lc_ #plurk-dashboard #about_me a,
-:is(url(})) {
+._lc_ #plurk-dashboard #about_me a /*}'*/  {
   color: #6ba5ff;
 }
 .block_cnt .cboxAnchor:not(.response) .plurk_cnt,
@@ -56,9 +54,8 @@ html,
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.12);
 }
-:is(url({)),
-body .textarea_holder textarea,
-:is(url(})) {
+'{:is('{'), 
+body .textarea_holder textarea /*}'*/  {
   background-color: transparent;
   color: var(--plurk-text-color);
 }
@@ -94,11 +91,10 @@ body .textarea_holder textarea,
 ._lch_ ~ .pop-window .pop-window-content {
   background: var(--theme-dark-bg-color) !important;
 }
+'{:is('{'), 
 ._lch_ ~ .pop-window .show-response-manager,
 ._lch_ ~ .pop-window textarea,
-:is(url({)),
-#emoticons-holder,
-:is(url(})) {
+#emoticons-holder /*}'*/  {
   background: none;
 }
 ._lch_ ~ .pop-window .input_holder {
@@ -116,33 +112,29 @@ body .textarea_holder textarea,
 ._lch_ ~ .pop-window .q_freestyle {
   background: #5f5f5f;
 }
-:is(url({)),
+'{:is('{'), 
 .pop-view#noti-list .header,
 .pop-view#emoticon-selector .header,
-.pop-view#emoticon-selector #emoticon-tabs,
-:is(url(})) {
+.pop-view#emoticon-selector #emoticon-tabs /*}'*/  {
   border-color: #525252;
 }
-:is(url({)),
+'{:is('{'), 
 .pop-view.pop-menu li a,
 .pop-view#noti-list li,
 .pop-view#noti-list li a,
 .pop-view#emoticon-selector .header .desc .title,
 .pop-window .pop-window-view,
 .pop-window .pop-window-view .user_list a,
-.pop-window .pop-window-view .user_list .nick_name,
-:is(url(})) {
+.pop-window .pop-window-view .user_list .nick_name /*}'*/  {
   color: var(--plurk-text-color);
 }
-:is(url({)),
-.pop-view,
-:is(url(})) {
+'{:is('{'), 
+.pop-view /*}'*/  {
   border: 1px solid rgba(255, 255, 255, 0.12);
   background: var(--theme-dark-bg-color);
 }
-:is(url({)),
-.pop-window .pop-window-view .user_list a:hover,
-:is(url(})) {
+'{:is('{'), 
+.pop-window .pop-window-view .user_list a:hover /*}'*/  {
   background: var(--theme-main-color);
 }
 

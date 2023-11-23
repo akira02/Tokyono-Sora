@@ -56,10 +56,9 @@
 .dash-group-right {
   transform: translate(500px, 0);
 }
-:is(url({)),
-.dash-group-right:hover #karma,
-#layout_body:has(.karma_tooltip:hover) .dash-group-right #karma,
-:is(url(})) {
+'{:is('{'), 
+#layout_body .dash-group-right:hover #karma,
+#layout_body:has(.karma_tooltip:hover) .dash-group-right #karma /*}'*/  {
   transform: translate(5px, 20px);
 }
 .dash-group-left:hover + .dash-group-right {
@@ -75,9 +74,8 @@
 }
 
 /* 透明topbar */
-:is(url({)),
-#top_bar,
-:is(url(})) {
+'{:is('{'), 
+#top_bar /*}'*/  {
   background: none;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
