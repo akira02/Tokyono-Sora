@@ -17,17 +17,17 @@
 [附加自訂 CSS](https://github.com/akira02/Tokyono-Sora/blob/main/custom.css) </br>
 </br>
 
-備註：Firefox 70 以上也支援背景模糊功能，但需要額外自行啟用：
+備註：Firefox 需啟用 has-selector 才能正常使用：
 
 - 在網址列輸入 `about:config` </br>
-- `layout.css.backdrop-filter.enabled` 設定為`true` </br>
-- `gfx.webrender.all` 設定為 `true` </br>
+- `layout.css.has-selector.enabled` 設定為`true` </br>
 
 ### 產生器
+
 這個佈景主題是即時產生模糊半透明效果的，若您的電腦不支援硬體加速，使用此佈景主題可能會有河道捲動不順暢的狀況。 </br>
 這時候可以使用靜態模糊圖片產生器，預先產生模糊圖片： </br>
 https://chiaki.uk/Tokyono-Sora </br>
-產生後的CSS直接貼到Tokyono-Sora的CSS後面，接在原本的CSS下面即可改用靜態模糊背景。</br>
+產生後的 CSS 直接貼到 Tokyono-Sora 的 CSS 後面，接在原本的 CSS 下面即可改用靜態模糊背景。</br>
 
 ## 特色
 
@@ -94,11 +94,12 @@ Chrome：
 
 複製[附加自訂 CSS](https://github.com/akira02/Tokyono-Sora/blob/main/custom.css)裡面的`改成世界線變動率風格卡馬值`區塊，貼到`自訂佈景`->`自訂佈景風格`欄位中的最下面，要貼在最後面才會啟用喔！
 
-### 使用之後捲動河道好像卡卡的，有時候CPU使用率會衝很高？
+### 使用之後捲動河道好像卡卡的，有時候 CPU 使用率會衝很高？
+
 這個佈景主題是即時產生模糊半透明效果的，若您的電腦不支援硬體加速，使用此佈景主題可能會有河道捲動不順暢的狀況。</br>
 這時候可以使用靜態模糊圖片產生器，預先產生模糊圖片：</br>
 https://chiaki.uk/Tokyono-Sora</br>
-產生後的CSS，貼到`自訂佈景`->`自訂佈景風格`欄位的最下面即可，要貼在原本的CSS最後面才會啟用喔！</br>
+產生後的 CSS，貼到`自訂佈景`->`自訂佈景風格`欄位的最下面即可，要貼在原本的 CSS 最後面才會啟用喔！</br>
 
 ## 作者
 
