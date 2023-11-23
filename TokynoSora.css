@@ -79,19 +79,17 @@ body::-webkit-scrollbar /*}'*/ {
   width: 0px;
 }
 '{:is('{'), 
-*::-webkit-scrollbar,
+::-webkit-scrollbar,
 body:has(#bookmark_holder)::-webkit-scrollbar /*}'*/ {
   width: 5px;
 }
 '{:is('{'), 
-*::-webkit-scrollbar-track,
-body:is(url(})) {
+::-webkit-scrollbar-track /*}'*/ {
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
 '{:is('{'), 
-*::-webkit-scrollbar-thumb,
-body:is(url(})) {
+::-webkit-scrollbar-thumb /*}'*/ {
   -webkit-border-radius: 4px;
   border-radius: 4px;
   background: #9c9c9c;
