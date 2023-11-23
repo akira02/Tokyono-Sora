@@ -38,6 +38,19 @@
   position: fixed;
 }
 
+/* 未讀訊息通知旁的圖 */
+#noti_re:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -20px;
+  right: -90px;
+  width: 140px;
+  height: 140px;
+  background-image: url('https://images.plurk.com/22Z5QJc1WB9shfJ7d79EX.gif ');
+  background-size: contain;
+}
+
 /* 改成世界線變動率風格卡馬值 */
 @font-face {
   font-family: nixie2;
