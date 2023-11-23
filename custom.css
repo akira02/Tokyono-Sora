@@ -93,24 +93,22 @@
 #karma_div #karma {
   font-family: nixie-color;
   line-height: 36px;
-  font-size: 43px;
+  font-size: 50px;
   text-shadow: none !important;
+  filter: drop-shadow(0 0 20px black);
 }
 #karma_arrow.pif-arrow-up {
   margin-left: 15px;
 }
 .dash-group-right {
   transform: translate(520px, 0);
-  background-color: rgba(0, 0, 0, 1);
-}
-.dash-group-right:hover {
-  background-color: rgba(0, 0, 0, 0.6);
 }
 '{:is('{'), 
 .dash-group-right:hover #karma_div #karma,
 #layout_body:has(.karma_tooltip:hover) .dash-group-right #karma /*}'*/  {
   transform: translate(25px, 20px);
-  font-size: 50px;
+  font-size: 60px;
+  filter: drop-shadow(0 0 20px black) contrast(200%);
 }
 .dash-group-left:hover + .dash-group-right {
   transform: translate(500px, -50px);
