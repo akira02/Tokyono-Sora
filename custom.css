@@ -78,7 +78,7 @@
   transform: translate(500px, -50px);
 }
 
-/* 卡馬值改成世界線變動率風格 */
+/* 卡馬值改成世界線變動率風彩色字體(Firefox不支援) */
 @font-face {
   font-family: nixie-color;
   src: url('https://chiaki.uk/assets/DivergenceMeterNumber/divergenceNumber-sbix.ttf.woff2') format('woff2'),
