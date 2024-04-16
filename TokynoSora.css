@@ -49,6 +49,11 @@
 ._lc_#layout_content {
   min-height: 100vh;
 }
+'{:is('{'), 
+body,
+:is(url(})) {
+ overflow-y: auto;
+}
 
 /*修正過高的噗載入回應錯位*/
 ._lc_#layout_content:has(#form_holder .loading:not(.hide)) {
