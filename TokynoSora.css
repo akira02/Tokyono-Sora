@@ -42,7 +42,8 @@
 ._lch_,
 ._lch_ .text_holder,
 ._lch_ ~ .pop-window,
-._lch_ ~ .pop-view {
+._lch_ ~ .pop-view,
+._lch_ ~ .pop-window .divplurk .content {
   line-height: 1.5em;
 }
 ._lc_#layout_content {
