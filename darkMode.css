@@ -2,8 +2,9 @@
   Tokyono-Sora Dark Mode Plugin
 ------------------------------ */
 
-'{:is('{'), 
-html /*}'*/  {
+._lch_,
+._lch_ ~ .pop-window,
+._lch_ ~ .pop-view {
   /* 覆蓋原本設定的主題色 */
   /* 主題色 */
   --theme-main-color: rgb(67, 99, 140);
@@ -26,10 +27,12 @@ html /*}'*/  {
 .name {
   text-shadow: none;
 }
-'{:is('{'), 
-.plurk a.ex_link,
-.plurk a.meta,
-._lc_ #plurk-dashboard #about_me a /*}'*/  {
+
+._lch_ .plurk a.ex_link,
+._lch_ ~ .pop-window .plurk a.ex_link,
+._lch_ ~ .pop-view .plurk a.ex_link,
+._lch_ ~ .pop-window .plurk a.meta,
+._lc_ #plurk-dashboard #about_me a /*}'*/ {
   color: #6ba5ff;
 }
 .block_cnt .cboxAnchor:not(.response) .plurk_cnt,
@@ -54,8 +57,9 @@ html /*}'*/  {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.12);
 }
-'{:is('{'), 
-body .textarea_holder textarea /*}'*/  {
+._lch_ .textarea_holder textarea,
+._lch_ ~ .pop-window .textarea_holder textarea,
+._lch_ ~ .pop-view .textarea_holder textarea {
   background-color: transparent;
   color: var(--plurk-text-color);
 }
@@ -91,10 +95,10 @@ body .textarea_holder textarea /*}'*/  {
 ._lch_ ~ .pop-window .pop-window-content {
   background: var(--theme-dark-bg-color) !important;
 }
-'{:is('{'), 
+
 ._lch_ ~ .pop-window .show-response-manager,
 ._lch_ ~ .pop-window textarea,
-#emoticons-holder /*}'*/  {
+._lch_ ~ .pop-view #emoticons-holder {
   background: none;
 }
 ._lch_ ~ .pop-window .input_holder {
@@ -112,29 +116,25 @@ body .textarea_holder textarea /*}'*/  {
 ._lch_ ~ .pop-window .q_freestyle {
   background: #5f5f5f;
 }
-'{:is('{'), 
-.pop-view#noti-list .header,
-.pop-view#emoticon-selector .header,
-.pop-view#emoticon-selector #emoticon-tabs /*}'*/  {
+._lch_ ~ .pop-view#noti-list .header,
+._lch_ ~ .pop-view#emoticon-selector .header,
+._lch_ ~ .pop-view#emoticon-selector #emoticon-tabs {
   border-color: #525252;
 }
-'{:is('{'), 
-.pop-view.pop-menu li a,
-.pop-view#noti-list li,
-.pop-view#noti-list li a,
-.pop-view#emoticon-selector .header .desc .title,
-.pop-window .pop-window-view,
-.pop-window .pop-window-view .user_list a,
-.pop-window .pop-window-view .user_list .nick_name /*}'*/  {
+._lch_ ~ .pop-view.pop-menu li a,
+._lch_ ~ .pop-view#noti-list li,
+._lch_ ~ .pop-view#noti-list li a,
+._lch_ ~ .pop-view#emoticon-selector .header .desc .title,
+._lch_ ~ .pop-window .pop-window-view,
+._lch_ ~ .pop-window .pop-window-view .user_list a,
+._lch_ ~ .pop-window .pop-window-view .user_list .nick_name {
   color: var(--plurk-text-color);
 }
-'{:is('{'), 
-.pop-view /*}'*/  {
+._lch_ ~ .pop-view {
   border: 1px solid rgba(255, 255, 255, 0.12);
   background: var(--theme-dark-bg-color);
 }
-'{:is('{'), 
-.pop-window .pop-window-view .user_list a:hover /*}'*/  {
+._lch_ ~ .pop-window .pop-window-view .user_list a:hover {
   background: var(--theme-main-color);
 }
 

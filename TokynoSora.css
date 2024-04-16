@@ -1,11 +1,12 @@
 /* 
-   Tokyono-Sora v1.3.6
+   Tokyono-Sora v1.4.0(beta)
    Design by Chiaki.C https://plurk.com/akira02
    https://github.com/akira02/Tokyono-Sora/
 */
 
-'{:is('{'), 
-html /*}'*/ {
+._lch_,
+._lch_ ~ .pop-window,
+._lch_ ~ .pop-view {
   /* 主題色 */
   --theme-main-color: rgba(255, 87, 77, 1);
   /* 副主題色(文字顏色) */
@@ -32,14 +33,15 @@ html /*}'*/ {
 }
 
 /*   整體控制   */
-'{:is('{'), 
-body,
-html /*}'*/ {
+._lch_,
+._lch_ ~ .pop-window,
+._lch_ ~ .pop-view {
   font-family: 'M 翔鶴黑體 TC', 'PingFang TC', 'LiHei Pro', 'Heiti TC', 'Source Han Sans TC', 'Noto Sans TC',
     'Hiragino Sans', 'Century Gothic', 'Microsoft Jhenghei', '微軟正黑體', sans-serif !important;
 }
-'{:is('{'), 
-.text_holder /*}'*/ {
+._lch_,
+._lch_ ~ .pop-window,
+._lch_ ~ .pop-view {
   line-height: 1.5em;
 }
 ._lc_#layout_content {
@@ -51,45 +53,15 @@ html /*}'*/ {
   height: 150vh;
 }
 
-/*top_bar背景及文字顏色*/
-'{:is('{'), 
-#top_bar /*}'*/ {
-  color: var(--top-bar-text-color);
-  background: var(--top-bar-bg-color);
-  backdrop-filter: saturate(var(--blur-saturate)) blur(var(--blur-px));
-  -webkit-backdrop-filter: saturate(var(--blur-saturate)) blur(var(--blur-px));
-}
-'{:is('{'), 
-.bar-color /*}'*/ {
-  background: none;
-}
-'{:is('{'), 
-#top_bar #top-bar-main .tab.current:after /*}'*/ {
-  background: rgba(208, 208, 200, 0.7);
-  left: calc(50% - 1.5px);
-  top: 32px;
-  width: 3px;
-  height: 3px;
-  border-radius: 5px;
-}
-
 /*捲軸調整*/
-'{:is('{'), 
-body::-webkit-scrollbar /*}'*/ {
-  width: 0px;
-}
-'{:is('{'), 
-::-webkit-scrollbar,
-body:has(#bookmark_holder)::-webkit-scrollbar /*}'*/ {
+._lch_ ::-webkit-scrollbar {
   width: 5px;
 }
-'{:is('{'), 
-::-webkit-scrollbar-track /*}'*/ {
+._lch_ ::-webkit-scrollbar-track {
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
-'{:is('{'), 
-::-webkit-scrollbar-thumb /*}'*/ {
+._lch_ ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 4px;
   border-radius: 4px;
   background: #9c9c9c;
@@ -156,39 +128,32 @@ body:has(#bookmark_holder)::-webkit-scrollbar /*}'*/ {
   backdrop-filter: saturate(var(--blur-saturate)) blur(var(--blur-px));
   -webkit-backdrop-filter: saturate(var(--blur-saturate)) blur(var(--blur-px));
 }
-'{:is('{'), 
-.pop-view /*}'*/ {
+._lch_ ~ .pop-view {
   background: var(--plurk-bg-color);
   color: var(--plurk-text-color);
   backdrop-filter: saturate(var(--blur-saturate)) blur(var(--blur-px));
   -webkit-backdrop-filter: saturate(var(--blur-saturate)) blur(var(--blur-px));
 }
-'{:is('{'), 
-.pop-menu .pop-view-content li a:not(.no-hover):hover /*}'*/ {
+._lch_ ~ .pop-menu .pop-view-content li a:not(.no-hover):hover {
   color: white;
   background: var(--theme-main-color);
 }
-'{:is('{'), 
-.pop-view#noti-list li.new-noti /*}'*/ {
+._lch_ ~ .pop-view#noti-list li.new-noti {
   background: transparent;
   font-weight: 800;
 }
-'{:is('{'), 
-.pop-view#noti-list .pop-view-content,
+._lch_ ~ .pop-view#noti-list .pop-view-content,
 #noti-list ul,
-.pop-window .pop-window-view .user_list .title /*}'*/ {
+.pop-window .pop-window-view .user_list .title {
   background: none;
 }
-'{:is('{'), 
-.pop-menu li.sep /*}'*/ {
+._lch_ ~ .pop-menu li.sep {
   background: rgba(223, 223, 223, 1);
 }
-'{:is('{'), 
-#noti-list li /*}'*/ {
+._lch_ ~ #noti-list li {
   border: none;
 }
-'{:is('{'), 
-#noti-list li:hover /*}'*/ {
+._lch_ ~ #noti-list li:hover {
   background: rgba(0, 0, 0, 0.1);
 }
 /*彈出視窗輸入框圓角*/
@@ -407,9 +372,8 @@ body:has(#bookmark_holder)::-webkit-scrollbar /*}'*/ {
   margin-top: -1px;
   font-size: var(--plurk-font-size);
 }
-'{:is('{'), 
-body .plurkForm.mini-mode .textarea_holder textarea,
-body .mini_form .textarea_holder textarea /*}'*/ {
+._lch_ .plurkForm.mini-mode .textarea_holder textarea,
+._lch_ .mini_form .textarea_holder textarea {
   font-size: var(--plurk-font-size);
 }
 .icons_holder .pif-emoticon:after {
@@ -692,9 +656,7 @@ body .mini_form .textarea_holder textarea /*}'*/ {
   transform: translate(540px, 0);
   z-index: 1500;
 }
-'{:is('{'), 
-#layout_body .dash-group-right:hover,
-#layout_body:has(.karma_tooltip:hover) .dash-group-right /*}'*/ {
+.dash-group-right:hover {
   max-height: 100vh;
   border-radius: 7px;
   transition: max-height 1s, background 0s, transform 1s, border-radius 0.3s;
@@ -772,9 +734,8 @@ body .mini_form .textarea_holder textarea /*}'*/ {
   opacity: 0;
   transition: opacity 0.5s 0.5s;
 }
-'{:is('{'), 
 .dash-group-right:hover #karma_arrow,
-#layout_body:has(.karma_tooltip:hover) .dash-group-right #karma_arrow /*}'*/ {
+#layout_body:has(.karma_tooltip:hover) .dash-group-right #karma_arrow {
   opacity: 1;
 }
 #karma_arrow.pif-arrow-up {
@@ -816,9 +777,8 @@ body .mini_form .textarea_holder textarea /*}'*/ {
 .dash-stats-karma {
   margin: 0 !important;
 }
-'{:is('{'), 
-.dash-group-right:hover #karma,
-#layout_body:has(.karma_tooltip:hover) .dash-group-right #karma /*}'*/ {
+
+.dash-group-right:hover #karma {
   transform: translate(20px, 20px);
   font-size: 50px;
 }

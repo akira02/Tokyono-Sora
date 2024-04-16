@@ -69,46 +69,8 @@
 .dash-group-right {
   transform: translate(500px, 0);
 }
-'{:is('{'), 
-#layout_body .dash-group-right:hover #karma,
-#layout_body:has(.karma_tooltip:hover) .dash-group-right #karma /*}'*/  {
+.dash-group-right:hover #karma {
   transform: translate(5px, 20px);
-}
-.dash-group-left:hover + .dash-group-right {
-  transform: translate(500px, -50px);
-}
-
-/* 卡馬值改成世界線變動率風彩色字體(Firefox不支援) */
-@font-face {
-  font-family: nixie-color;
-  src: url('https://chiaki.uk/assets/DivergenceMeterNumber/divergenceNumber-sbix.ttf.woff2') format('woff2'),
-    url('https://chiaki.uk/assets/DivergenceMeterNumber/divergenceNumber-sbix.ttf') format('truetype')
-}
-#karma::before {
-  content: '1·0';
-}
-#karma::after {
-  content: '';
-}
-#karma_div #karma {
-  font-family: nixie-color;
-  line-height: 36px;
-  font-size: 50px;
-  text-shadow: none !important;
-  filter: drop-shadow(0 0 20px black);
-}
-#karma_arrow.pif-arrow-up {
-  margin-left: 15px;
-}
-.dash-group-right {
-  transform: translate(520px, 0);
-}
-'{:is('{'), 
-.dash-group-right:hover #karma_div #karma,
-#layout_body:has(.karma_tooltip:hover) .dash-group-right #karma /*}'*/  {
-  transform: translate(25px, 20px);
-  font-size: 60px;
-  filter: drop-shadow(0 0 20px black) contrast(200%);
 }
 .dash-group-left:hover + .dash-group-right {
   transform: translate(500px, -50px);
@@ -120,14 +82,6 @@
 }
 #span_years:after {
   content: '大小姐♂';
-}
-
-/* 透明topbar */
-'{:is('{'), 
-#top_bar /*}'*/  {
-  background: none;
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
 }
 
 /* 點開噗文後，禁用河道左右捲動 */
