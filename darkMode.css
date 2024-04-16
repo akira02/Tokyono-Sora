@@ -31,7 +31,9 @@
 ._lch_ .plurk a.ex_link,
 ._lch_ ~ .pop-window .plurk a.ex_link,
 ._lch_ ~ .pop-view .plurk a.ex_link,
+._lch_ .plurk a.meta,
 ._lch_ ~ .pop-window .plurk a.meta,
+._lch_ ~ .pop-view .plurk a.meta,
 ._lc_ #plurk-dashboard #about_me a /*}'*/ {
   color: #6ba5ff;
 }
