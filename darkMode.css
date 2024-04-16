@@ -34,7 +34,7 @@
 ._lch_ .plurk a.meta,
 ._lch_ ~ .pop-window .plurk a.meta,
 ._lch_ ~ .pop-view .plurk a.meta,
-._lc_ #plurk-dashboard #about_me a /*}'*/ {
+._lc_ #plurk-dashboard #about_me a {
   color: #6ba5ff;
 }
 .block_cnt .cboxAnchor:not(.response) .plurk_cnt,
@@ -100,7 +100,8 @@
 
 ._lch_ ~ .pop-window .show-response-manager,
 ._lch_ ~ .pop-window textarea,
-._lch_ ~ .pop-view #emoticons-holder {
+._lch_ ~ .pop-view #emoticons-holder,
+._lch_ ~ .pop-view#noti-list ul {
   background: none;
 }
 ._lch_ ~ .pop-window .input_holder {
