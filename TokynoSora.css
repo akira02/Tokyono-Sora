@@ -40,6 +40,7 @@
     'Hiragino Sans', 'Century Gothic', 'Microsoft Jhenghei', '微軟正黑體', sans-serif !important;
 }
 ._lch_,
+._lch_ .text_holder,
 ._lch_ ~ .pop-window,
 ._lch_ ~ .pop-view {
   line-height: 1.5em;
