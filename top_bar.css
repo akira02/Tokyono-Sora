@@ -1,0 +1,37 @@
+/* top_bar背景及文字顏色 */
+'{:is('{'), 
+body,
+:is(url(})) {
+  /* top_bar文字顏色 */
+  --top-bar-text-color: rgba(255, 255, 255, 1);
+  /* top_bar背景色 */
+  --top-bar-bg-color: rgba(29, 29, 31, 0);
+  /* top_bar背景模糊程度 */
+  --top-bar-blur-px: 30px;
+  /* top_bar背景模糊飽和度 */
+  --top-bar-blur-saturate: 180%;
+}
+
+'{:is('{'), 
+#top_bar,
+:is(url(})) {
+  color: var(--top-bar-text-color);
+  background: var(--top-bar-bg-color);
+  backdrop-filter: saturate(var(--top-bar-blur-saturate)) blur(var(--top-bar-blur-px));
+  -webkit-backdrop-filter: saturate(var(--top-bar-blur-saturate)) blur(var(--top-bar-blur-px));
+}
+'{:is('{'), 
+.bar-color,
+:is(url(})) {
+  background: none;
+}
+'{:is('{'), 
+#top_bar #top-bar-main .tab.current:after,
+:is(url(})) {
+  background: rgba(208, 208, 200, 0.7);
+  left: calc(50% - 1.5px);
+  top: 32px;
+  width: 3px;
+  height: 3px;
+  border-radius: 5px;
+}
