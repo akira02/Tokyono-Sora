@@ -49,10 +49,10 @@
 ._lc_#layout_content {
   min-height: 100vh;
 }
-'{:is('{'), 
+:is('{'),
 body,
-:is(url(})) {
- overflow-y: auto;
+:is([}]) {
+  overflow-y: auto;
 }
 
 /*修正過高的噗載入回應錯位*/
