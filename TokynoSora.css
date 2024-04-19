@@ -390,7 +390,6 @@ body,
   border-radius: 7px;
   background: var(--plurk-bg-color);
   border-color: transparent;
-  overflow: hidden;
 }
 .response-manager .edit:hover,
 .response-manager .mention:hover,
@@ -399,6 +398,7 @@ body,
 .response-manager .mention.popview-targeting,
 .response-manager .option.popview-targeting {
   background: var(--theme-main-color);
+  border-radius: 7px;
 }
 /*未讀噗邊框*/
 .new .plurk_cnt {
