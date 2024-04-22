@@ -762,7 +762,7 @@ body,
   padding: 0.2em;
   padding-bottom: 0.4em;
   color: #ff9b28;
-  text-shadow: 0px 0px 6px rgba(255, 65, 0, 0.7), 0px 0px 20px #ff8000, 0px 0px 10px rgb(118, 18, 3) !important;
+  text-shadow: 0 0 10px #fa1c16, 0 0 40px #fa1c16, 0 0 40px #fa1c16, 0 0 40px #fa1c16, 0 0 3px #fed128;
   transition: transform 1s, font-size 1s;
 }
 .dash-stats-karma .help {
