@@ -25,6 +25,7 @@
   --top-bar-bg-color: rgba(29, 29, 31, 0.72);
   /* 模糊程度 */
   --blur-px: 30px;
+  /* 模糊背景飽和度補償 */
   --blur-saturate: 180%;
   /* 噗文高度 */
   --plurk-max-height: calc(8vh - 30px);
