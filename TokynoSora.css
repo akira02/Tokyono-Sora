@@ -258,9 +258,11 @@ body,
 /*調整噗浪獸位置*/
 #dynamic_logo {
   position: fixed;
-  bottom: 140px;
-  right: 20px;
-  pointer-events: none;
+  bottom: 110px;
+  right: 60px;
+}
+.snowflake {
+  z-index: 1100;
 }
 
 /*   噗調整   */
