@@ -9,8 +9,8 @@ function generateReplacement(urls) {
 }
 /* 若想保留噗浪原本的背景圖請刪除上面這段 */
 
-/* 白色模糊背景改為固定圖片 */
-.cboxAnchor:not(.response) .plurk_cnt,
+/* 模糊背景改為固定圖片 */
+.block_cnt .cboxAnchor:not(.response) .plurk_cnt,
 #form_holder,
 ._lch_~.pop-window .pop-window-content,
 ._lch_~.pop-window .pop-window-view iframe  {
