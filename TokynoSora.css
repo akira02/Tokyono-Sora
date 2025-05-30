@@ -176,7 +176,6 @@ body,
 /*   河道調整   */
 #timeline_cnt {
   height: calc(100% + 70px) !important;
-  z-index: 1000;
 }
 .block_cnt {
   top: -20px;
