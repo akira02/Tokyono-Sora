@@ -1,5 +1,5 @@
 /* 
-   Tokyono-Sora v1.4.1
+   Tokyono-Sora v1.4.2
    Design by Chiaki.C https://plurk.com/akira02
    https://github.com/akira02/Tokyono-Sora/
 */
@@ -350,6 +350,13 @@ body,
 }
 .block_cnt .cboxAnchor:not(.response).display .manager {
   margin-top: 0px;
+}
+/*噗文互動小於3表情符號節省空間*/
+plurk-reactions .reactions:has(> :last-child:nth-child(2)),
+plurk-reactions .reactions:has(> :last-child:nth-child(4)),
+plurk-reactions .reactions:has(> :last-child:nth-child(5)),
+plurk-reactions .reactions:has(> :last-child:nth-child(6)) {
+  margin-bottom: -27px;
 }
 /*展開噗文*/
 .block_cnt .cboxAnchor:not(.response).plurk_box .plurk_cnt {
