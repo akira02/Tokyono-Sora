@@ -346,10 +346,10 @@ body,
   min-width: 430px;
 }
 .block_cnt .cboxAnchor:not(.response).display .text_holder {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 .block_cnt .cboxAnchor:not(.response).display .manager {
-  margin-top: -15px;
+  margin-top: 0px;
 }
 /*展開噗文*/
 .block_cnt .cboxAnchor:not(.response).plurk_box .plurk_cnt {
