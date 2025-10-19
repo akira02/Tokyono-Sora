@@ -1,5 +1,5 @@
 /* 
-   Tokyono-Sora v1.4.2
+   Tokyono-Sora v1.4.3
    Design by Chiaki.C https://plurk.com/akira02
    https://github.com/akira02/Tokyono-Sora/
 */
@@ -80,12 +80,16 @@ body,
 
 /*載入動畫*/
 .loading > img {
-  background: url(https://raw.githubusercontent.com/akira02/Tokyono-Sora/main/loading.svg) no-repeat;
+  display: none;
+}
+.loading:after {
+  content: '';
+  background: url('https://images.plurk.com/3c8AgRefJzkwmUlzSSTBNK.gif') no-repeat;
   width: 90px;
   height: 90px;
   background-size: 90px;
-  padding-left: 90px;
-  margin-top: 17px;
+  display: block;
+  margin: auto;
 }
 .loading-div {
   background: url(https://raw.githubusercontent.com/akira02/Tokyono-Sora/main/loading.svg) no-repeat;
@@ -171,6 +175,12 @@ body,
 }
 ._lch_ ~ .pop-window .m_qualifier {
   border-radius: 10px;
+}
+/*彈出視窗高亮回應*/
+._lch_ ~ .pop-window .divresponse.response--highlight,
+._lch_ ~ .pop-window .divresponse.response--highlight.show-response-manager {
+  color: var(--theme-sub-color);
+  background-color: var(--theme-main-color);
 }
 
 /*   河道調整   */
@@ -473,6 +483,16 @@ body,
 }
 .plurk_icon.coin {
   margin-left: 15px;
+}
+/*噗文回應顯示方式按鈕*/
+.response-status .response-only-owner,
+.response-status .response-display-options {
+  background: none;
+}
+.response-status .response-only-owner:hover,
+.response-status .response-display-options:hover,
+.response-status .response-display-options.popview-targeting {
+  background: var(--theme-main-color)
 }
 
 /*   面板設定   */

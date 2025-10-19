@@ -137,6 +137,10 @@
   border: 1px solid rgba(255, 255, 255, 0.12);
   background: var(--theme-dark-bg-color);
 }
+._lch_ ~ .pop-menu.response-display-options-menu {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: var(--theme-dark-bg-color);
+}
 ._lch_ ~ .pop-window .pop-window-view .user_list a:hover {
   background: var(--theme-main-color);
 }
