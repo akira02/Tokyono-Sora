@@ -141,8 +141,22 @@
   border: 1px solid rgba(255, 255, 255, 0.12);
   background: var(--theme-dark-bg-color);
 }
-._lch_ ~ .pop-window .pop-window-view .user_list a:hover {
-  background: var(--theme-main-color);
+._lch_ ~ .pop-window .pop-window-view .title,
+._lch_ ~ .pop-window plurk-reaction-user-list,
+._lch_ ~ .pop-window .pop-window-view .user_list a:hover,
+._lch_ ~ .pop-window plurk-reaction-user-list-loader .user-list a:hover {
+  background: none;
+}
+._lch_ ~ .pop-window plurk-reaction-user-list .reaction__user-list__area__container {
+  background: var(--theme-dark-bg-color);
+  color: var(--plurk-text-color);
+}
+._lch_ ~ .pop-window .reaction_user_list .title.title_border,
+._lch_ ~ .pop-window plurk-reaction-user-list .reaction__user-list__area__container__function {
+  border-bottom: none;
+}
+._lch_ ~ .pop-window plurk-reaction-user-list-loader .user-list a div .display-name {
+  color: var(--plurk-text-color);
 }
 
 /* ------END Dark Mode Plugin------ */
