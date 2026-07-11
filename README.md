@@ -6,7 +6,9 @@
 </br> </br>
 這是 [千秋稻荷社](https://plurk.com/chiakich) 重新設計的噗浪 UI，免費且自由使用的噗浪 CSS 佈景！</br>
 ![image](https://images.plurk.com/51F0ghyRPLXSwrIkM81MBB.jpg)
-![image](https://images.plurk.com/3JD6vO5tC3YkhNwANnJStQ.png)
+<img width="2527" height="1465" alt="截圖 2026-07-11 中午12 15 40" src="https://github.com/user-attachments/assets/d147d59c-a853-4aa3-8973-b16b053f6d08" />
+<img width="2536" height="1463" alt="截圖 2026-07-11 中午12 14 34" src="https://github.com/user-attachments/assets/375bb405-7496-4b99-b892-c06bc935dc65" />
+
 </br></br>
 
 ### 安裝
